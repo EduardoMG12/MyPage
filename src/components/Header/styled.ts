@@ -77,13 +77,12 @@ export const NameLogo = styled.div`
         87%{opacity:0;text-shadow:none}
         88%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.6),0 0 60px rgba(255,255,255,.45),0 0 110px rgba(255,255,255,.25),0 0 100px rgba(255,255,255,.1)}
         99%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.6),0 0 60px rgba(255,255,255,.45),0 0 110px rgba(255,255,255,.25),0 0 100px rgba(255,255,255,.1)}
-        100%{opacity:0;text-shadow:0 0 30px rgba(255,255,255,.6),0 0 60px rgba(255,255,255,.45),0 0 110px rgba(255,255,255,.25),0 0 100px rgba(255,255,255,.1)}
     }
     display: flex;
     justify-content:center;
     align-items:center;
     gap: 1rem;
-    animation: expandText 1.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) 3s both;
+    animation: expandText 1.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) 1.5s both;
     & h2{    
         color: var(--header-color-dark);
         font-family: var(--fontfamily-header);
@@ -91,8 +90,7 @@ export const NameLogo = styled.div`
         font-weight: var(--fontweight-header);
     }
     .firstNameLogo{
-        animation: light 5s ease-out both;
-        animation-delay: 5s;
+        animation: light 5s ease-out 4s both;
     }
     .lastNameLogo{
     }
