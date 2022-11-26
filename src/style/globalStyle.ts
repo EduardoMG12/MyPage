@@ -1,4 +1,3 @@
-//@ts-ignore
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
@@ -24,6 +23,7 @@ const GlobalStyle = createGlobalStyle`
   //Fonts
     --fontfamily-header: 'Sora', sans-serif;//card, tittleQuemSomos;
     --fontsize-header: 2rem;
+    --fontsize-logo-header: 2.5rem;
     --fontweight-header: 400;
   //
     --fontFamily-Sora: 'Sora', sans-serif;//card, tittleQuemSomos

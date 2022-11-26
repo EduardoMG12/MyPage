@@ -1,5 +1,5 @@
 import React from 'react'
-import { ContainerHeader, Header, Items, List, Logo, NameLogo, Navegation } from './styled'
+import { ContainerHeader, Header, IconLogo, Items, List, Logo, NameLogo, Navegation } from './styled'
 
 export default function () {
     return (
@@ -7,17 +7,19 @@ export default function () {
             <ContainerHeader>
                 <Logo>
                     <NameLogo>
-                        <h2 className='nameLogo'>Charles </h2>
+                        <h2 className='firstNameLogo'>Charles </h2>
                         <h2 className='lastNameLogo'>Eduardo</h2>
                     </NameLogo>
-                    <h2 className='iconLogo'>!=</h2></Logo>
+                    <IconLogo>
+                        <h2>!=</h2>
+                    </IconLogo>
+                </Logo>
                 <Navegation>
                     <List>
-                        <Items to="/"><p>Home</p></Items>
-                        <Items to="/"><p>Conhecimentos/Ferramentos</p></Items>
-                        <Items to="/Projects"><p>Projetos</p></Items>
+                        <li><Items to="/"><p>Home</p></Items></li>
+                        <li><Items to="/"><p>Conhecimentos/Ferramentos</p></Items></li>
+                        <li><Items to="/Projects"><p>Projetos</p></Items></li>
                     </List>
-
                 </Navegation>
             </ContainerHeader>
         </Header>

@@ -21,33 +21,29 @@ export const ContainerHeader = styled.div`
 `;
 
 export const Navegation = styled.nav`
-
 `;
 
 export const Logo = styled.div`
     display: flex;
     justify-content:center;
     align-items:center;
-    gap: 0.5rem;
-   
-    & h2{
-        color: var(--header-color-dark);
-        font-size: 2.5rem;
-        font-family: var(--fontfamily-header);
-        font-weight: var(--fontweight-header);
-        letter-spacing: 0.5rem;
-        transition: all 0.3s ease-in-out;
-    }
-    
-   
-    .iconLogo{
-    border: 2px solid green;
-        
-       
-    }
+    gap: 2rem;
 `;
 
 export const NameLogo = styled.div`
+@keyframes expandText {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
    @keyframes light{
         0%{opacity:1}
         1%{opacity:0}
@@ -80,25 +76,33 @@ export const NameLogo = styled.div`
         86%{opacity:0;text-shadow:none}
         87%{opacity:0;text-shadow:none}
         88%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.6),0 0 60px rgba(255,255,255,.45),0 0 110px rgba(255,255,255,.25),0 0 100px rgba(255,255,255,.1)}
-        100%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.6),0 0 60px rgba(255,255,255,.45),0 0 110px rgba(255,255,255,.25),0 0 100px rgba(255,255,255,.1)}
+        99%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.6),0 0 60px rgba(255,255,255,.45),0 0 110px rgba(255,255,255,.25),0 0 100px rgba(255,255,255,.1)}
+        100%{opacity:0;text-shadow:0 0 30px rgba(255,255,255,.6),0 0 60px rgba(255,255,255,.45),0 0 110px rgba(255,255,255,.25),0 0 100px rgba(255,255,255,.1)}
     }
-
     display: flex;
     justify-content:center;
     align-items:center;
-    gap: 0.5rem;
-
-    .nameLogo{
-        /* display: none; */
-        animation: light 0s ease-out both;
-        animation-delay: 0s;
+    gap: 1rem;
+    animation: expandText 1.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) 3s both;
+    & h2{    
+        color: var(--header-color-dark);
+        font-family: var(--fontfamily-header);
+        font-size: var(--fontsize-logo-header);
+        font-weight: var(--fontweight-header);
+    }
+    .firstNameLogo{
+        animation: light 5s ease-out both;
+        animation-delay: 5s;
     }
     .lastNameLogo{
     }
-     &:hover .nameLogo{
-            display: block;
-            letter-spacing: 0.5rem;      
-        }
+`;
+
+export const IconLogo = styled.div`
+    color: var(--header-color-dark);
+    font-family: var(--fontfamily-header);
+    font-size: var(--fontsize-header);
+    font-weight: var(--fontweight-header);
 `;
 
 export const List = styled.ul`
