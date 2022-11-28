@@ -4,47 +4,42 @@ const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;700&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
-  :root{
   //Colors black theme;
-    --header-background-dark: rgba(0, 0, 0, 0.7);;
-    --header-color-dark: #FFFFFF;
-    --pages-background-dark:#0D0D0D;
+  :root{
+    --header-background: rgba(0, 0, 0, 0.7);
+    --header-color: #FFFFFF;
+    --pages-background:#0D0D0D;
     --pages-color:#FFFFFF;
-    --ballon-message-dark: rgba(0, 0, 0, 0.7);
-    --background-projects-ballons: #1F1D1D;
+    --ballon-message: rgba(0, 0, 0, 0.7);
+    --projects-bgd-ballons: #1F1D1D;
+    --projects-color-ballons: #000000; 
+    --select: #1F1D1E;
+  }
+  
   //Colors white theme;
-    --header-background-white: rgba(255, 255, 255, 0.7);;
-    --header-color-white: #000000;
-    --pages-background-white:#E7E7E7;
+  :root.light{
+    --header-background: rgba(255, 255, 255, 0.7);
+    --header-color: #000000;
+    --pages-background:#E7E7E7;
     --pages-color:#000000;
-    --ballon-message-white: rgba(192, 192, 192, 0.7);
-    --projects-background-ballons: #A3A3A3;
+    --ballon-message: rgba(192, 192, 192, 0.7);
+    --projects-bgd-ballons: #A3A3A3;
     --projects-color-ballons: #FFFFFF;   
+    --select: #B5C7D4;
+  }
+  
+  :root{
   //Fonts
     --fontfamily-header: 'Sora', sans-serif;//card, tittleQuemSomos;
     --fontsize-header: 2rem;
     --fontsize-logo-header: 2.5rem;
     --fontweight-header: 400;
-  //
     --fontFamily-Sora: 'Sora', sans-serif;//card, tittleQuemSomos
     --fontFamily-Roboto: 'Roboto', sans-serif;//about
     --fontFamily-Montserrat: 'Montserrat', sans-serif;
-
-    --fontSize-Midia1800-Tittle: 3.5rem;
-    --fontSize-Midia1600-Tittle: 3.5rem;
-    --fontSize-Midia1024-Tittle: 3.5rem;
-    --fontSize-Midia750-Tittle: 3.5rem;
-    --fontSize-P: 3.5rem;
-    --fontSize-Midia1800-P: 2.5rem;
-    --fontSize-Midia1600-P: 2.5rem;
-    --fontSize-Midia1024-P: 2.5rem;
-    --fontSize-Midia750-P: 2.5rem;
-    --fontSize-Header-Tittle: 4.5rem;
-    --fontSize-Header-P: 3rem;
-    --fontSizeMidia1024-Tittle-Header: 3.5rem;
-    --fontSizeMidia768-Tittle-Header: 2.5rem;
-    --fontSizeMidia1024-P-Header: 2rem;
-    --fontSizeMidia768-P-Header: 1.5rem;
+  }
+  ::selection {
+    background-color: var(--select) !important;
   }
   *{
     /* border: 2px solid green; */
@@ -57,6 +52,7 @@ const GlobalStyle = createGlobalStyle`
   html{
   font-size: 62.5%
   }
+  
 `;
 
 export default GlobalStyle;

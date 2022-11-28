@@ -10,8 +10,8 @@ export const Header = styled.header`
     align-items: center;
     height: 7.5rem;
     width: 100%;
-    background-color: var(--header-background-dark);
-    border-bottom: 1px solid rgba(255,255,255,0.03);
+    background-color: var(--header-background);
+    border-bottom: 1px solid ${props => props.theme.black || props.theme.light};
 `;
 
 export const ContainerHeader = styled.div`
@@ -89,7 +89,7 @@ export const NameLogo = styled.div`
     gap: 1rem;
     animation: expandText 1.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) 1.5s both;
     & h2{    
-        color: var(--header-color-dark);
+        color: var(--header-color);
         font-family: var(--fontfamily-header);
         font-size: var(--fontsize-logo-header);
         font-weight: var(--fontweight-header);
@@ -102,10 +102,11 @@ export const NameLogo = styled.div`
 `;
 
 export const IconLogo = styled.div`
-    color: var(--header-color-dark);
+    color: var(--header-color);
     font-family: var(--fontfamily-header);
     font-size: var(--fontsize-header);
     font-weight: var(--fontweight-header);
+    cursor: pointer;
 `;
 
 export const List = styled.ul`
@@ -120,7 +121,7 @@ export const List = styled.ul`
 export const Items = styled(Link)`
     & p{
         text-transform:uppercase;
-        color:var(--header-color-dark);
+        color:var(--header-color);
         font-size: var(--fontsize-header);
         font-family: var(--fontfamily-header);
         font-weight: var(--fontweight-header);

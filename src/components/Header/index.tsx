@@ -2,6 +2,9 @@ import Hamburguer from '../Hamburguer'
 import { ContainerHeader, Header, IconLogo, Items, List, Logo, NameLogo, Navegation, } from '../Header/styled'
 
 export default function () {
+    const colorTheme = () => {
+        document.documentElement.classList.toggle("light")
+    }
     return (
         <>
             <Header>
@@ -11,7 +14,7 @@ export default function () {
                             <h2 className='firstNameLogo'>Charles </h2>
                             <h2 className='lastNameLogo'>Eduardo</h2>
                         </NameLogo>
-                        <IconLogo>
+                        <IconLogo onClick={colorTheme}>
                             <h2>!=</h2>
                         </IconLogo>
                     </Logo>

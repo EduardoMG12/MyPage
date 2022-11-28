@@ -7,7 +7,7 @@ export const Hamburguer = styled.div`
     justify-content: space-around;
     flex-flow: column nowrap;
     align-items: center;
-    top: 2.2rem;
+    top: 3rem;
     right: 2.5rem;
     width: 2rem;
     height: 2rem;
@@ -16,7 +16,7 @@ export const Hamburguer = styled.div`
     }
     span{
         border-radius: 2rem;
-        background-color: var(--header-color-dark);
+        background-color: var(--header-color);
         height: 0.25rem;
         width: 2rem;
         transition: all 0.3s linear;
