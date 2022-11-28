@@ -1,9 +1,19 @@
 import styled, { keyframes } from 'styled-components'
-import image from '../../assets/image/macbook_image.jpg'
+
 
 export const Container = styled.div`
+   
+`
+export const HeroSection = styled.section`
     width: 100%;
     height: 100vh;
-    background: url(${image}) center no-repeat;
-    background-size: cover;
+    background: var(--img-background) center no-repeat;
+    background-size: cover;    
 `
+
+export const HomeAbout = styled.section`
+    width: 100%;
+    height: 100vh;
+    background-color: var(--pages-background);
+
+`;
