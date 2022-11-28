@@ -11,6 +11,7 @@ export const Header = styled.header`
     height: 7.5rem;
     width: 100%;
     background-color: var(--header-background-dark);
+    border-bottom: 1px solid rgba(255,255,255,0.03);
 `;
 
 export const ContainerHeader = styled.div`
@@ -18,6 +19,10 @@ export const ContainerHeader = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    :hover .firstNameLogo {
+        animation: light 5s ease-out 0.3s both;
+    }
+
 `;
 
 export const Navegation = styled.nav`
@@ -90,10 +95,10 @@ export const NameLogo = styled.div`
         font-weight: var(--fontweight-header);
     }
     .firstNameLogo{
-        animation: light 5s ease-out 4s both;
     }
     .lastNameLogo{
     }
+    
 `;
 
 export const IconLogo = styled.div`
@@ -107,6 +112,9 @@ export const List = styled.ul`
     display:flex;
     justify-content:center;
     gap: 5rem;
+    @media (max-width: 900px) {
+    display:none;
+    }
 `;
 
 export const Items = styled(Link)`
@@ -119,4 +127,11 @@ export const Items = styled(Link)`
         text-transform: capitalize;
         letter-spacing: 0.145em;
     }
+        :hover,p:hover,ul:hover{
+            transition: 0.3s transform ease-in-out;
+            transition: 0.9s  letter-spacing ease-in-out;
+            transform: translateY(-0.5rem);
+            letter-spacing: 0.25rem;
+        }
 `;
+
