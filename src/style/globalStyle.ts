@@ -1,6 +1,10 @@
 import { createGlobalStyle } from 'styled-components'
 import imageDark from '/bgdHomeDark.jpg'
 import imageLight from '/bgdHomeLigth.jpg'
+import myImage from '/MyImage.png'
+import myImage2 from '/MyImage1.png'
+import MyIcon from '/MyIcon.png'
+import MyIcon2 from '/MyIcon2.png'
 
 const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;700&display=swap');
@@ -17,6 +21,8 @@ const GlobalStyle = createGlobalStyle`
     --projects-color-ballons: #000000; 
     --select: #1F1D1E;
     --img-background: url(${imageDark});
+    --my-image: url(${myImage});
+    --my-icon: url(${MyIcon});
   }
   
   //Colors white theme;
@@ -30,6 +36,8 @@ const GlobalStyle = createGlobalStyle`
     --projects-color-ballons: #FFFFFF;   
     --select: #B5C7D4;
     --img-background: url(${imageLight});
+    --my-image: url(${myImage2});
+    --my-icon: url(${MyIcon2});
   }
   
   :root{
