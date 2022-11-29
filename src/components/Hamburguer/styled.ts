@@ -13,6 +13,7 @@ export const Hamburguer = styled.div`
     height: 2rem;
      @media (max-width: 900px) {
         display: flex;
+        display: none;
     }
     span{
         border-radius: 2rem;

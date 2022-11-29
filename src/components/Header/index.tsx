@@ -1,18 +1,15 @@
 import Hamburguer from '../Hamburguer'
-import { ButtonTheme, ContainerHeader, Header, IconLogo, Items, List, Logo, NameLogo, Navegation, } from '../Header/styled'
-
+import { ContainerHeader, Header, IconLogo, Items, List, Logo, NameLogo, Navegation, } from '../Header/styled'
+import ButtonTheme from '../SunAndMoon'
 export default function () {
-    const colorTheme = () => {
-        document.documentElement.classList.toggle("light")
-    }
+
+
     return (
         <>
             <Header>
                 <ContainerHeader>
                     <Logo>
-                        <ButtonTheme onClick={colorTheme}>
-                            <span></span>
-                        </ButtonTheme>
+                        <ButtonTheme />
                         <NameLogo>
                             <h2 className='firstNameLogo'>Charles </h2>
                             <h2 className='lastNameLogo'>Eduardo</h2>
