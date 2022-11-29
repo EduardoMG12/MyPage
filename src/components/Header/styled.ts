@@ -118,6 +118,14 @@ export const List = styled.ul`
     @media (max-width: 900px) {
     display:none;
     }
+    @media (max-width: 1600px) {
+    gap: 3rem;
+    margin-right: 2rem
+    }
+    @media (max-width: 1100px) {
+    gap: 2rem;
+    margin-right: 4rem
+    }
 `;
 
 export const Items = styled(Link)`

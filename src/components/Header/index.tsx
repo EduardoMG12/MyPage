@@ -9,7 +9,6 @@ export default function () {
             <Header>
                 <ContainerHeader>
                     <Logo>
-                        <ButtonTheme />
                         <NameLogo>
                             <h2 className='firstNameLogo'>Charles </h2>
                             <h2 className='lastNameLogo'>Eduardo</h2>
@@ -23,6 +22,7 @@ export default function () {
                             <li><Items to="/"><p>Home</p></Items></li>
                             <li><Items to="/"><p>Conhecimentos/Ferramentos</p></Items></li>
                             <li><Items to="/Projects"><p>Projetos</p></Items></li>
+                            <ButtonTheme />
                         </List>
                         <Hamburguer />
                     </Navegation>
