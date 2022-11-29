@@ -10,7 +10,8 @@ const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;700&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
-  //Colors black theme;
+  
+//Colors black theme;
   :root{
     --header-background: rgba(0, 0, 0, 0.7);
     --header-color: #FFFFFF;
@@ -23,13 +24,19 @@ const GlobalStyle = createGlobalStyle`
     --img-background: url(${imageDark});
     --my-image: url(${myImage});
     --my-icon: url(${MyIcon});
+    
+  //animationTheme
+    --transform-positionXMoon: translateX(-150%);
+    --transform-positionYMoon: translateY(0%);
     --button-BgdTheme:#FFFFFF;
-    --button-ColorTheme:#A3A3A3;
-    --button-ThemePositon: flex-start;
-    --transorm-ThemePosition: translateX(-50%);
+    --button-ColorTheme: #184392;
+    --button-SubColorTheme:rgba(0, 0, 0, 1);
+    --visibility-ThemeWhite: visible;
+    --visibility-ThemeDark: hidden;
+    --height-sun:0rem;
   }
   
-  //Colors white theme;
+//Colors white theme;
   :root.light{
     --header-background: rgba(255, 255, 255, 0.7);
     --header-color: #000000;
@@ -42,14 +49,20 @@ const GlobalStyle = createGlobalStyle`
     --img-background: url(${imageLight});
     --my-image: url(${myImage2});
     --my-icon: url(${MyIcon2});
+
+  //animationTheme
+    --transform-positionYMoon: translateY(-150%);
+    --transform-positionXMoon: translateX(50%);
     --button-BgdTheme:#000000;
-    --button-ColorTheme:#A3A3A3;
-    --button-ThemePositon: flex-end;
-    --transorm-ThemePosition: translateX(-160%);
+    --button-ColorTheme: #fdd835;
+    --button-SubColorTheme:#FDB813;
+    --visibility-ThemeWhite: hidden;
+    --visibility-ThemeDark: visible;
+    --height-sun:1.3rem;
   }
   
   :root{
-  //Fonts
+//Fonts
     --fontfamily-header: 'Sora', sans-serif;//card, tittleQuemSomos;
     --fontsize-header: 2rem;
     --fontsize-logo-header: 2.5rem;
@@ -58,9 +71,11 @@ const GlobalStyle = createGlobalStyle`
     --fontFamily-Roboto: 'Roboto', sans-serif;//about
     --fontFamily-Montserrat: 'Montserrat', sans-serif;
   }
+
   ::selection {
     background-color: var(--select) !important;
   }
+  
   *{
     /* border: 2px solid green; */
     margin: 0;

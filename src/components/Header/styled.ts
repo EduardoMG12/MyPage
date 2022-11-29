@@ -35,30 +35,7 @@ export const Logo = styled.div`
     gap: 2rem;
 `;
 
-export const ButtonTheme = styled.div`
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: var(--button-BgdTheme);
-    left: 10px;
-    width: 5rem;
-    height: 2.2rem;
-    display: flex;
-    align-items: center;
-    justify-content: var(--button-ThemePositon);    
-    border-radius: 20px;
-    
-    span{
-        position: absolute;
-        left: 38px;
-        transform: var(--transorm-ThemePosition);
-        background-color: var(--button-ColorTheme);
-        width: 2.4rem;
-        height: 2.4rem;
-        border-radius: 50%;
-        transition: 0.3s all linear;
-    }
-`;
+
 
 export const NameLogo = styled.div`
 @keyframes expandText {
@@ -140,6 +117,14 @@ export const List = styled.ul`
     gap: 5rem;
     @media (max-width: 900px) {
     display:none;
+    }
+    @media (max-width: 1600px) {
+    gap: 3rem;
+    margin-right: 2rem
+    }
+    @media (max-width: 1100px) {
+    gap: 2rem;
+    margin-right: 4rem
     }
 `;
 
