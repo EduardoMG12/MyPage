@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, HeroSection, HomeAbout, MyImg } from './style'
 
-export default function index() {
+export default function home() {
     const years = () => {
         const dateString = "2002/11/12"
         const today = new Date();
