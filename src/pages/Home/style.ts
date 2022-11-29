@@ -12,6 +12,7 @@ export const HeroSection = styled.section`
     height: 100vh;
     background: var(--img-background) center no-repeat;
     background-size: cover;    
+    background-attachment:fixed;
 `
 
 export const HomeAbout = styled.section`
