@@ -23,6 +23,10 @@ const GlobalStyle = createGlobalStyle`
     --img-background: url(${imageDark});
     --my-image: url(${myImage});
     --my-icon: url(${MyIcon});
+    --button-BgdTheme:#FFFFFF;
+    --button-ColorTheme:#A3A3A3;
+    --button-ThemePositon: flex-start;
+    --transorm-ThemePosition: translateX(-50%);
   }
   
   //Colors white theme;
@@ -38,6 +42,10 @@ const GlobalStyle = createGlobalStyle`
     --img-background: url(${imageLight});
     --my-image: url(${myImage2});
     --my-icon: url(${MyIcon2});
+    --button-BgdTheme:#000000;
+    --button-ColorTheme:#A3A3A3;
+    --button-ThemePositon: flex-end;
+    --transorm-ThemePosition: translateX(-160%);
   }
   
   :root{

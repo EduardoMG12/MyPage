@@ -1,5 +1,5 @@
 import Hamburguer from '../Hamburguer'
-import { ContainerHeader, Header, IconLogo, Items, List, Logo, NameLogo, Navegation, } from '../Header/styled'
+import { ButtonTheme, ContainerHeader, Header, IconLogo, Items, List, Logo, NameLogo, Navegation, } from '../Header/styled'
 
 export default function () {
     const colorTheme = () => {
@@ -10,11 +10,14 @@ export default function () {
             <Header>
                 <ContainerHeader>
                     <Logo>
+                        <ButtonTheme onClick={colorTheme}>
+                            <span></span>
+                        </ButtonTheme>
                         <NameLogo>
                             <h2 className='firstNameLogo'>Charles </h2>
                             <h2 className='lastNameLogo'>Eduardo</h2>
                         </NameLogo>
-                        <IconLogo onClick={colorTheme}>
+                        <IconLogo>
                             <h2>!=</h2>
                         </IconLogo>
                     </Logo>
