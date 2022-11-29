@@ -1,5 +1,5 @@
 import Header from "../src/components/Header"
-import Home from "./pages/home";
+import Home from "./pages/Home";
 import Main from "./components/Main";
 import GlobalStyle from './style/globalStyle';
 import { Route, Routes } from "react-router-dom";
