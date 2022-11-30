@@ -12,7 +12,7 @@ export const HeroSection = styled.section`
     height: 100vh;
     background: var(--img-background) center no-repeat;
     background-size: cover;    
-    background-attachment:fixed;
+    /* background-attachment:fixed; */
 `
 
 export const HomeAbout = styled.section`
@@ -37,3 +37,7 @@ export const MyImg = styled.div`
     height:70rem;
     width: 70rem;
 `;
+export const ProjectsContainer = styled.div`
+    width: 100%;
+    height: 100vh;
+`
