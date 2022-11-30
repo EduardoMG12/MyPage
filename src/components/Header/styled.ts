@@ -6,6 +6,7 @@ export const Header = styled.header`
     top: 0;
     left: 0;
     display: flex;
+    z-index: 1000;
     justify-content: center;
     align-items: center;
     height: 7.5rem;
