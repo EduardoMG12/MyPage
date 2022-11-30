@@ -1,8 +1,9 @@
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { Container, HeroSection, HomeAbout, MyImg, ProjectsContainer } from './style'
 import BallonText from '../../components/BallonText'
 import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 export default function home() {
     const years = () => {
@@ -23,27 +24,38 @@ export default function home() {
         return random == true ? "var(--my-image)" : "var(--my-icon)"
     }
 
-    gsap.registerPlugin(ScrollTrigger);
+    const ballonRef = useRef(null);
+    const imgRef = useRef(null);
+    useEffect(() => {
+        const el = imgRef.current;
 
-    gsap.to(".myImageGsap", {
-        scrollTrigger: {
-            trigger: ".MyImageGsap",
-            start: "top center",
-            end: "top 100px",
-            scrub: true,
-            pin: true,
-            markers: true,
-        },
-        y: 200,
-        duration: 1
-    })
+        gsap.to(el, {
+            scrollTrigger: {
+                trigger: el,
+                toggleActions: "play resume reverse pause"
+            },
+            y: -800,
+            duration: 1
+        })
+    }, []
+    )
+    useEffect(() => {
+        const el = ballonRef.current;
+
+        gsap.to(el, {
+            scrollTrigger: el,
+            y: -800,
+            duration: 1
+        })
+    }, []
+    )
 
     return (
         <Container>
             <HeroSection />
             <HomeAbout>
-                <MyImg className='myImageGsap' style={{ backgroundImage: randomImage() }} />
-                <BallonText attributes={{ className: "BallonGsap" }} style={{ padding: "8rem 6rem" }}>
+                <MyImg ref={imgRef} style={{ backgroundImage: randomImage() }} />
+                <BallonText ref={ballonRef} style={{ padding: "8rem 6rem" }}>
                     <p> Olá eu sou Charles Eduardo, tenho {years()} anos moro no Paraná. Desde a minha adolescencia sempre gostei/joguei muitos jogos oque acho que pode ter influênciado muito a decisão da área que estou seguindo.</p>
                 </BallonText>
             </HomeAbout>
