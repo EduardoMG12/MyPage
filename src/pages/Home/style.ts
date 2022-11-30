@@ -22,7 +22,7 @@ export const HomeAbout = styled.section`
     width: 100%;
     height: 100vh;
     background-color: var(--pages-background);
-    padding-inline: 10rem;
+    padding-inline: 20rem;
     p{
     color:var(--pages-color);
     font-size: 2.5rem;

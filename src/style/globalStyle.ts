@@ -10,7 +10,9 @@ const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;700&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
-  
+  @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+
 //Colors black theme;
   :root{
     --header-background: rgba(0, 0, 0, 0.7);
@@ -70,6 +72,7 @@ const GlobalStyle = createGlobalStyle`
     --fontFamily-Sora: 'Sora', sans-serif;//card, tittleQuemSomos
     --fontFamily-Roboto: 'Roboto', sans-serif;//about
     --fontFamily-Montserrat: 'Montserrat', sans-serif;
+    --fontFamily-PtSans: 'PT Sans', sans-serif;
   }
 
   ::selection {
