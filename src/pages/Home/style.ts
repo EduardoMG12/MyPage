@@ -6,13 +6,13 @@ export const Container = styled.div`
    flex-direction: column;
    align-items: center;
    justify-content: center;
-`
+   background-color: var(--pages-background);
+`;
 export const HeroSection = styled.section`
     width: 100%;
     height: 100vh;
     background: var(--img-background) center no-repeat;
     background-size: cover;    
-    /* background-attachment:fixed; */
 `
 
 export const HomeAbout = styled.section`
@@ -23,6 +23,7 @@ export const HomeAbout = styled.section`
     height: 100vh;
     background-color: var(--pages-background);
     padding-inline: 20rem;
+    /* background-attachment:fixed; */
     p{
     color:var(--pages-color);
     font-size: 2.5rem;
@@ -61,12 +62,12 @@ export const MyImg = styled.div`
 `;
 export const ProjectsContainer = styled.div`
     width: 100%;
-    height: 100vh;
+    height: 1000vh;
 `
 export const BallonAbout = styled.div`
-    width: 60rem;
+    width: 90rem;
     padding: 6rem;
-    background: rgba( 0, 0, 0, 0.25 );
+    background: var(--ballon-message);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 10px );
     -webkit-backdrop-filter: blur( 10px );
@@ -76,4 +77,7 @@ export const BallonAbout = styled.div`
     font-size: 2.5rem;
     letter-spacing: 3px;
     line-height: 134.02%;
+    color: var(--pages-color);
+    p{
+    }
 `;

@@ -2,7 +2,9 @@ import React, { useEffect, useRef, useState } from 'react'
 import { BallonAbout, Container, HeroSection, HomeAbout, MyImg, ProjectsContainer } from './style'
 import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollToPlugin);
 
 export default function home() {
     const years = () => {
@@ -23,6 +25,26 @@ export default function home() {
         return random == true ? "var(--my-image)" : "var(--my-icon)"
     }
 
+    const backgroundRef = useRef(null);
+    useEffect(() => {
+        const el = backgroundRef.current
+        gsap.to(el, {
+            scrollTrigger: {
+                trigger: el,
+                toggleActions: "play reverse reverse resume",
+                start: "top top",
+                end: "190% top",
+                markers: false,
+                pin: true,
+                pinSpacing: false,
+                scrub: 1
+            },
+            blur: 0.2,
+            opacity: 0,
+            y: 100,
+            duration: 0.1
+        })
+    }, [])
     const imgRef = useRef(null);
     useEffect(() => {
         const el = imgRef.current
@@ -30,16 +52,18 @@ export default function home() {
         gsap.to(el, {
             scrollTrigger: {
                 trigger: el,
-                toggleActions: "play rever reverse reverse",
-                start: "-50px 90%",
-                end: "-=80",
+                toggleActions: "play reverse reverse resume",
+                start: "-50px bottom",
+                end: "top top",
                 markers: true,
+                pin: false,
                 scrub: true
             },
-            y: -1000,
+            y: -400,
             duration: 0.1
         })
     }, [])
+
     const ballonRef = useRef(null);
     useEffect(() => {
         const el = ballonRef.current
@@ -47,20 +71,22 @@ export default function home() {
         gsap.to(el, {
             scrollTrigger: {
                 trigger: el,
-                toggleActions: "play resume resume reverse",
-                start: "-50px 90%",
-                end: "-=80",
+                toggleActions: "play reverse reverse resume",
+                start: "-20px bottom",
+                end: "top top",
                 markers: true,
+                pin: false,
                 scrub: true
             },
-            y: -600,
+            y: -200,
             duration: 0.1
         })
     }, [])
 
+
     return (
         <Container>
-            <HeroSection />
+            <HeroSection ref={backgroundRef} />
             <HomeAbout>
                 <MyImg ref={imgRef} style={{ backgroundImage: randomImage() }} />
                 <BallonAbout ref={ballonRef} style={{ padding: "8rem 6rem" }}>
