@@ -12,7 +12,8 @@ export const HeroSection = styled.section`
     width: 100%;
     height: 100vh;
     background: var(--img-background) center no-repeat;
-    background-size: cover;    
+    background-size: cover;   
+    background-position: center;
 `
 
 export const HomeAbout = styled.section`
@@ -29,10 +30,10 @@ export const HomeAbout = styled.section`
     font-size: 2.5rem;
     
     }
-@media (max-width:1600px) {
+@media (max-width:1800px) {
     padding-inline: 1rem;
 }
-@media (max-width:1060px) {
+@media (max-width:1260px) {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
@@ -59,6 +60,15 @@ export const MyImg = styled.div`
     height:75rem;
     width: 75rem;
 }
+@media (max-width:868px) {
+    height:60rem;
+    width: 60rem;
+}
+@media (max-width:600px) {
+    height:35rem;
+    width: 35rem;
+}
+
 `;
 export const ProjectsContainer = styled.div`
     width: 100%;
@@ -79,5 +89,23 @@ export const BallonAbout = styled.div`
     line-height: 134.02%;
     color: var(--pages-color);
     p{
+    }
+    @media (max-width:1060px) {
+    width: 60rem;
+    font-size: 1rem;
+    line-height: 30px;
+     padding: 6rem 3rem;
+    }
+    @media (max-width:600px) {
+    width: 40rem;
+    font-size: 1rem;
+    line-height: 30px;
+     padding: 6rem 3rem;
+    }
+    @media (max-width:400px) {
+    width: 30rem;
+    font-size: 0.8rem;
+    line-height: 25px;
+     padding: 4rem 3rem;
     }
 `;

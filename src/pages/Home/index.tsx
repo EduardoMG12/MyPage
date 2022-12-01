@@ -39,9 +39,8 @@ export default function home() {
                 pinSpacing: false,
                 scrub: 1
             },
-            blur: 0.2,
             opacity: 0,
-            y: 100,
+            y: 20,
             duration: 0.1
         })
     }, [])
