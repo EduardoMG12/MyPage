@@ -4,10 +4,6 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 
-gsap.registerPlugin(ScrollTrigger);
-gsap.registerPlugin(ScrollToPlugin);
-
-
 
 export default function home() {
     const years = () => {
@@ -27,7 +23,6 @@ export default function home() {
         const random = Boolean(Math.round(Math.random()));
         return random == true ? "var(--my-image)" : "var(--my-icon)"
     }
-
 
     const backgroundRef = useRef(null);
     useEffect(() => {
@@ -56,14 +51,13 @@ export default function home() {
         gsap.to(el, {
             scrollTrigger: {
                 trigger: el,
-                toggleActions: "play reverse reverse resume",
-                start: "-30px bottom",
-                end: "top top",
-                markers: true,
-                pin: false,
+                toggleActions: "play rever reverse reverse",
+                start: "-50px 90%",
+                end: "-=80",
+                markers: false,
                 scrub: true
             },
-            y: -900,
+            y: -1000,
             duration: 0.1
         })
     }, [])
@@ -75,14 +69,13 @@ export default function home() {
         gsap.to(el, {
             scrollTrigger: {
                 trigger: el,
-                toggleActions: "play reverse reverse resume",
-                start: "-20px bottom",
-                end: "top top",
-                markers: true,
-                pin: false,
+                toggleActions: "play resume resume reverse",
+                start: "-50px 90%",
+                end: "-=80",
+                markers: false,
                 scrub: true
             },
-            y: -600,
+            y: -200,
             duration: 0.1
         })
     }, [])
