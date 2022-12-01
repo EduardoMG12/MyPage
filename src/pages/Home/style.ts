@@ -119,5 +119,5 @@ export const BallonAbout = styled.div`
 `;
 export const ProjectsContainer = styled.div`
     width: 100%;
-    height: 1000vh;
+    height: 100vh;
     `;
