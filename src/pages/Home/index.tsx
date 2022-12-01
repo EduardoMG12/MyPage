@@ -1,10 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react'
-import { BallonAbout, Container, HeroSection, HomeAbout, MyImg, ProjectsContainer } from './style'
+import { ProjectsContainer, BallonAbout, Container, HeroSection, HomeAbout, MyImg } from './style'
 import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(ScrollToPlugin);
+
+
 
 export default function home() {
     const years = () => {
@@ -25,6 +28,7 @@ export default function home() {
         return random == true ? "var(--my-image)" : "var(--my-icon)"
     }
 
+
     const backgroundRef = useRef(null);
     useEffect(() => {
         const el = backgroundRef.current
@@ -44,6 +48,7 @@ export default function home() {
             duration: 0.1
         })
     }, [])
+
     const imgRef = useRef(null);
     useEffect(() => {
         const el = imgRef.current
@@ -52,13 +57,13 @@ export default function home() {
             scrollTrigger: {
                 trigger: el,
                 toggleActions: "play reverse reverse resume",
-                start: "-50px bottom",
+                start: "-30px bottom",
                 end: "top top",
                 markers: true,
                 pin: false,
                 scrub: true
             },
-            y: -400,
+            y: -900,
             duration: 0.1
         })
     }, [])
@@ -77,11 +82,10 @@ export default function home() {
                 pin: false,
                 scrub: true
             },
-            y: -200,
+            y: -600,
             duration: 0.1
         })
     }, [])
-
 
     return (
         <Container>
