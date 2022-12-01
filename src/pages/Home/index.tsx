@@ -3,6 +3,7 @@ import { BallonAbout, Container, HeroSection, HomeAbout, MyImg, ProjectsContaine
 import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(ScrollToPlugin);
 
@@ -25,6 +26,7 @@ export default function home() {
         return random == true ? "var(--my-image)" : "var(--my-icon)"
     }
 
+
     const backgroundRef = useRef(null);
     useEffect(() => {
         const el = backgroundRef.current
@@ -44,6 +46,7 @@ export default function home() {
             duration: 0.1
         })
     }, [])
+
     const imgRef = useRef(null);
     useEffect(() => {
         const el = imgRef.current
@@ -62,7 +65,7 @@ export default function home() {
             duration: 0.1
         })
     }, [])
-
+  
     const ballonRef = useRef(null);
     useEffect(() => {
         const el = ballonRef.current
@@ -81,7 +84,6 @@ export default function home() {
             duration: 0.1
         })
     }, [])
-
 
     return (
         <Container>
