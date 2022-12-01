@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Hamburguer = styled.div`
+    z-index: 1001;
     position: fixed;
     display: none;
     flex-direction: column;
