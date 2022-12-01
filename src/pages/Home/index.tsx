@@ -33,7 +33,7 @@ export default function home() {
                 toggleActions: "play rever reverse reverse",
                 start: "-50px 90%",
                 end: "-=80",
-                markers: true,
+                markers: false,
                 scrub: true
             },
             y: -1000,
@@ -50,7 +50,7 @@ export default function home() {
                 toggleActions: "play resume resume reverse",
                 start: "-50px 90%",
                 end: "-=80",
-                markers: true,
+                markers: false,
                 scrub: true
             },
             y: -600,
