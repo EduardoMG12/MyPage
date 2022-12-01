@@ -28,7 +28,17 @@ export const HomeAbout = styled.section`
     font-size: 2.5rem;
     
     }
-
+@media (max-width:1600px) {
+    padding-inline: 1rem;
+}
+@media (max-width:1060px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0;
+    height: 110vh;
+    padding: 0;
+}
 `;
 export const MyImg = styled.div`
     background-repeat: no-repeat;
@@ -36,6 +46,18 @@ export const MyImg = styled.div`
     background-position: center;
     height:70rem;
     width: 70rem;
+    @media (max-width:1600px) {
+    height:60rem;
+    width: 60rem;
+}
+    @media (max-width:1300px) {
+    height:55rem;
+    width: 55rem;
+}
+@media (max-width:1060px) {
+    height:75rem;
+    width: 75rem;
+}
 `;
 export const ProjectsContainer = styled.div`
     width: 100%;
