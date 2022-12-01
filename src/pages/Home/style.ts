@@ -115,4 +115,9 @@ export const BallonAbout = styled.div`
         line-height: 25px;
         padding: 4rem 3rem;
     }
+
 `;
+export const ProjectsContainer = styled.div`
+    width: 100%;
+    height: 1000vh;
+    `;
