@@ -7,6 +7,7 @@ export const Container = styled.div`
    align-items: center;
    justify-content: center;
    background-color: var(--pages-background);
+   overflow-y: hidden;
 `;
 export const HeroSection = styled.section`
     width: 100%;

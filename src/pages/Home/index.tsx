@@ -3,6 +3,7 @@ import { BallonAbout, Container, HeroSection, HomeAbout, MyImg, ProjectsContaine
 import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import CarouselProjects from '../../components/CarouselProjects';
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(ScrollToPlugin);
 export default function home() {
@@ -52,10 +53,12 @@ export default function home() {
                 start: "400px center", end: "center center",
                 markers: false,
                 pin: true,
-                scrub: 3,
+                scrub: 2,
             },
             opacity: 0,
-            y: -1000,
+            x: -700,
+            y: -700,
+            display: 'none',
             duration: 0.1
         })
     }, [])
@@ -72,11 +75,12 @@ export default function home() {
                 markers: false,
                 pin: true,
                 pinSpacing: false,
-                scrub: 3,
+                scrub: 2,
             },
-            display: 'none',
             opacity: 0,
-            y: -1000,
+            x: 700,
+            y: -700,
+            display: 'none',
             duration: 0.1
         })
     }, [])
@@ -90,6 +94,7 @@ export default function home() {
                 </BallonAbout>
             </HomeAbout>
             <ProjectsContainer></ProjectsContainer>
+            <CarouselProjects></CarouselProjects>
         </Container>
     )
 }
