@@ -3,8 +3,11 @@ import { BallonAbout, Container, HeroSection, HomeAbout, MyImg, ProjectsContaine
 import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import CarouselProjects from '../../components/CarouselProjects';
+
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(ScrollToPlugin);
+
 export default function home() {
     const years = () => {
         const dateString = "2002/11/12"
@@ -44,17 +47,20 @@ export default function home() {
     useEffect(() => {
         const el = imgRef.current
         console.log(imgRef)
+
         gsap.to(el, {
             scrollTrigger: {
                 trigger: el,
                 toggleActions: "play reverse reverse resume",
-                start: "-50px bottom",
-                end: "top top",
+                start: "400px center", end: "center center",
                 markers: false,
-                pin: false,
-                scrub: true
+                pin: true,
+                scrub: 2,
             },
-            y: -400,
+            opacity: 0,
+            x: -700,
+            y: -700,
+            display: 'none',
             duration: 0.1
         })
     }, [])
@@ -66,13 +72,17 @@ export default function home() {
             scrollTrigger: {
                 trigger: el,
                 toggleActions: "play reverse reverse resume",
-                start: "-20px bottom",
-                end: "top top",
+                start: "400px center",
+                end: "center center",
                 markers: false,
-                pin: false,
-                scrub: true
+                pin: true,
+                pinSpacing: false,
+                scrub: 2,
             },
-            y: -200,
+            opacity: 0,
+            x: 700,
+            y: -700,
+            display: 'none',
             duration: 0.1
         })
     }, [])
@@ -86,6 +96,7 @@ export default function home() {
                 </BallonAbout>
             </HomeAbout>
             <ProjectsContainer></ProjectsContainer>
+            <CarouselProjects></CarouselProjects>
         </Container>
     )
 }
