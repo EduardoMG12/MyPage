@@ -4,8 +4,10 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import CarouselProjects from '../../components/CarouselProjects';
+
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(ScrollToPlugin);
+
 export default function home() {
     const years = () => {
         const dateString = "2002/11/12"
