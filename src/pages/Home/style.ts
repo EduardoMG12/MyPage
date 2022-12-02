@@ -14,12 +14,13 @@ export const HeroSection = styled.section`
     background: var(--img-background) center no-repeat;
     background-size: cover;   
     background-position: center;
+    
 `;
 
 export const HomeAbout = styled.section`
     display:flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: flex-center;
     width: 100%;
     height: 100vh;
     background-color: var(--pages-background);
@@ -59,6 +60,7 @@ export const MyImg = styled.div`
     background-position: center;
     height:70rem;
     width: 70rem;
+    opacity: 1;
     @media (max-width:1600px) {
         height:60rem;
         width: 60rem;
@@ -83,7 +85,8 @@ export const MyImg = styled.div`
 
 export const BallonAbout = styled.div`
     width: 60rem;
-    padding: 6rem;
+    max-height: 60rem;
+    padding: 0 6rem;
     background: var(--ballon-message);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 10px );
@@ -93,7 +96,8 @@ export const BallonAbout = styled.div`
     font-weight: 400;
     font-size: 2.5rem;
     letter-spacing: 3px;
-    line-height: 134.02%;
+    line-height: 35px;
+    opacity: 1;
     color: var(--pages-color);
     p{
     }

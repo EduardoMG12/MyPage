@@ -44,17 +44,18 @@ export default function home() {
     useEffect(() => {
         const el = imgRef.current
         console.log(imgRef)
+
         gsap.to(el, {
             scrollTrigger: {
                 trigger: el,
                 toggleActions: "play reverse reverse resume",
-                start: "-50px bottom",
-                end: "top top",
+                start: "400px center", end: "center center",
                 markers: false,
-                pin: false,
-                scrub: true
+                pin: true,
+                scrub: 3,
             },
-            y: -400,
+            opacity: 0,
+            y: -1000,
             duration: 0.1
         })
     }, [])
@@ -66,13 +67,16 @@ export default function home() {
             scrollTrigger: {
                 trigger: el,
                 toggleActions: "play reverse reverse resume",
-                start: "-20px bottom",
-                end: "top top",
+                start: "400px center",
+                end: "center center",
                 markers: false,
-                pin: false,
-                scrub: true
+                pin: true,
+                pinSpacing: false,
+                scrub: 3,
             },
-            y: -200,
+            display: 'none',
+            opacity: 0,
+            y: -1000,
             duration: 0.1
         })
     }, [])
