@@ -58,7 +58,6 @@ export default function home() {
                 scrub: 2,
             },
             opacity: 0,
-            x: -700,
             y: -700,
             display: 'none',
             duration: 0.1
@@ -80,7 +79,6 @@ export default function home() {
                 scrub: 2,
             },
             opacity: 0,
-            x: 700,
             y: -700,
             display: 'none',
             duration: 0.1
