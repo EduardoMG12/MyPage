@@ -37,6 +37,14 @@ export const Content = styled.div`
         font-size: 2.5rem;
     }
     .toolsProjects{
-    
+    display: flex;
+    justify-content: space-evenly;
+        & li{
+        width: 2rem;
+        height: 2rem;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        }
     }
 `;
