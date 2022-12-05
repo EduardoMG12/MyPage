@@ -124,5 +124,15 @@ export const BallonAbout = styled.div`
 `;
 export const ProjectsContainer = styled.div`
     width: 100%;
-    height: 100vh;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h2{
+        color: var(--pages-color);
+        font-family: var(--fontFamily-PtSans);
+         font-weight: 400;
+        font-size: 2.5rem;
+    }
     `;

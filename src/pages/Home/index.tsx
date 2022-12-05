@@ -1,8 +1,9 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef } from 'react'
 import { BallonAbout, Container, HeroSection, HomeAbout, MyImg, ProjectsContainer } from './style'
 import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import Carousel from '../../components/Carousel'
 import CarouselProjects from '../../components/CarouselProjects';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -93,8 +94,14 @@ export default function home() {
                     <p> Olá eu sou Charles Eduardo, tenho {years()} anos moro no Paraná. Desde a minha adolescencia sempre gostei/joguei muitos jogos oque acho que pode ter influênciado muito a decisão da área que estou seguindo.</p>
                 </BallonAbout>
             </HomeAbout>
-            <ProjectsContainer></ProjectsContainer>
-            <CarouselProjects></CarouselProjects>
+
+            <ProjectsContainer>
+                <h2>Projetos</h2>
+                <Carousel>
+                    <CarouselProjects />
+                </Carousel>
+            </ProjectsContainer>
+
         </Container>
     )
 }

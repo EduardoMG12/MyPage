@@ -6,6 +6,7 @@ import { Container, Image, Tittle, LegendShort } from './style'
 interface IProjects {
     "id": number,
     "tittle": string,
+    "image": string,
     "sinopseShort": string,
     "sinopseLong": string,
     "tecnologics"?: ITecnologics,
@@ -34,20 +35,20 @@ export default function CarouselProjects() {
     }, [])
 
 
-    return projects.map((projects) => {
+    const projectMap = projects.map((projects) => {
         return (
             <Container key={projects.id}>
-                <Image />
+                <Image style={{ backgroundImage: `url(${projects.image ? projects.image : 'https://images.unsplash.com/photo-1572177812156-58036aae439c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'})` }} />
                 <div>
-                    <Tittle></Tittle>
-                    <LegendShort></LegendShort>
+                    <Tittle>{projects.tittle}</Tittle>
+                    <LegendShort>{projects.sinopseShort}</LegendShort>
+
 
                 </div>
 
 
             </Container>
-
         )
     })
-
+    return projectMap
 }
