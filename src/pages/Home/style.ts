@@ -129,10 +129,24 @@ export const ProjectsContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    h2{
-        color: var(--pages-color);
-        font-family: var(--fontFamily-PtSans);
-         font-weight: 400;
-        font-size: 2.5rem;
+    .tittle{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & h2{
+            color: var(--pages-color);
+            font-family: var(--fontFamily-Sora);
+            font-weight: 400;
+            font-size: 5.5rem;
+        }
+        & p{
+            color: var(--pages-color);
+            font-size: 2rem;
+            & a{
+                color: #003060;
+            
+            }
+        }
     }
+    
     `;

@@ -96,7 +96,10 @@ export default function home() {
             </HomeAbout>
 
             <ProjectsContainer>
-                <h2>Projetos</h2>
+                <div className="tittle">
+                    <h2>Alguns Projetos</h2>
+                    <p>para mais <a href="">projetos</a></p>
+                </div>
                 <Carousel>
                     <CarouselProjects />
                 </Carousel>
