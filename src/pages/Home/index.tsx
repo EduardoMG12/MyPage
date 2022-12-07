@@ -4,7 +4,6 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import Carousel from '../../components/Carousel'
-import CarouselProjects from '../../components/CarouselProjects';
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(ScrollToPlugin);
@@ -100,9 +99,7 @@ export default function home() {
                     <h2>Alguns Projetos</h2>
                     <p>para mais <a href="">projetos</a></p>
                 </div>
-                <Carousel>
-                    <CarouselProjects />
-                </Carousel>
+                <Carousel />
             </ProjectsContainer>
 
         </Container>
