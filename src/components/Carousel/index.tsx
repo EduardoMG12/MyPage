@@ -48,7 +48,7 @@ export default () => {
 
     const projectsFavorites = projects.slice(0, 5)
 
-    const projectsMap = projectsFavorites.map((projects) => {
+    const projectsMap: any[] = projectsFavorites.map((projects) => {
         return (
             <Container key={projects.id}>
                 <Image style={{ backgroundImage: `url(${projects.image ? projects.image : 'https://images.unsplash.com/photo-1572177812156-58036aae439c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'})` }} />
@@ -63,6 +63,7 @@ export default () => {
         )
     })
     return (
+        //@ts-ignore
         <Carousel isRTL showArrows={false} initialActiveIndex={1} disableArrowsOnEnd={false} breakPoints={breakPoints} itemsToShow={itemShow()}>
             {projectsMap}
         </Carousel>
