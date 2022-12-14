@@ -3,6 +3,8 @@ import imageDark from '/bgdHomeDark.jpg'
 import imageLight from '/bgdHomeLigth.jpg'
 import myImage from '/MyImage.png'
 import myImage2 from '/MyImage1.png'
+import projectsDark from '/projectsDark.jpg'
+import projectsWhite from '/projectsWhite.jpg'
 import MyIcon from '/MyIcon.png'
 import MyIcon2 from '/MyIcon2.png'
 
@@ -36,6 +38,44 @@ const GlobalStyle = createGlobalStyle`
     --visibility-ThemeWhite: visible;
     --visibility-ThemeDark: hidden;
     --height-sun:0rem;
+
+    //Projects
+    --img-background-projects: url(${projectsDark});
+
+    //Scroll
+    ::-webkit-scrollbar {
+    width: 10px;
+    height: 14px;
+  }
+  ::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #9C9C9C;
+    border: 0px none #ffffff;
+    border-radius: 20px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #9C9C9C;
+  }
+  ::-webkit-scrollbar-thumb:active {
+    background: #9C9C9C;
+  }
+  ::-webkit-scrollbar-track {
+    background: #080808;
+    border: 0px none #ffffff;
+    border-radius: 20px;
+  }
+  ::-webkit-scrollbar-track:hover {
+    background: #080808;
+  }
+  ::-webkit-scrollbar-track:active {
+    background: #080808;
+  }
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
   }
   
 //Colors white theme;
@@ -61,8 +101,10 @@ const GlobalStyle = createGlobalStyle`
     --visibility-ThemeWhite: hidden;
     --visibility-ThemeDark: visible;
     --height-sun:1.3rem;
+
+    //Projects
+    --img-background-projects: url(${projectsWhite});
   }
-  
   :root{
 //Fonts
     --fontfamily-header: 'Sora', sans-serif;//card, tittleQuemSomos;
