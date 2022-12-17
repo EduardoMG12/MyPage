@@ -1,8 +1,8 @@
 import Hamburguer from '../Hamburguer'
 import { ContainerHeader, Header, IconLogo, Items, List, Logo, NameLogo, Navegation, } from '../Header/styled'
 import ButtonTheme from '../SunAndMoon'
-export default function () {
 
+export default function () {
 
     return (
         <>
@@ -21,7 +21,7 @@ export default function () {
                         <List>
                             <li><Items to="/"><p>Home</p></Items></li>
                             <li><Items to="/"><p>Conhecimentos/Ferramentos</p></Items></li>
-                            <li><Items to="/Projects"><p>Projetos</p></Items></li>
+                            <li><Items to="MyProjects"><p>Projetos</p></Items></li>
                             <ButtonTheme />
                         </List>
                         <Hamburguer />

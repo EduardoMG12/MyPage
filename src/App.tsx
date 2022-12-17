@@ -1,5 +1,6 @@
 import Header from "../src/components/Header"
 import Home from "./pages/Home";
+import MyProjects from "./pages/MyProjects";
 import Main from "./components/Main";
 import GlobalStyle from './style/globalStyle';
 import { Route, Routes } from "react-router-dom";
@@ -11,6 +12,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Main />} >
           <Route index element={<Home />} />
+          <Route path="MyProjects" element={<MyProjects />} />
         </Route>
       </Routes>
     </>
