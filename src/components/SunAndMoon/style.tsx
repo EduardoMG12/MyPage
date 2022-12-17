@@ -1,4 +1,6 @@
-import styled from 'styled-components'
+import styled from "styled-components";
+
+styled
 
 export const ButtonTheme = styled.div`
     position: absolute;

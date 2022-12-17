@@ -23,7 +23,7 @@ const GlobalStyle = createGlobalStyle`
     --pages-color:#FFFFFF;
     --ballon-message: rgba(0, 0, 0, 0.7);
     --projects-bgd-ballons: #1F1D1D;
-    --projects-color-ballons: #000000; 
+    --projects-color-ballons: #FFFFFF;   
     --select: #1F1D1E;
     --img-background: url(${imageDark});
     --my-image: url(${myImage});
@@ -65,7 +65,7 @@ const GlobalStyle = createGlobalStyle`
   ::-webkit-scrollbar-track {
     background: #080808;
     border: 0px none #ffffff;
-    border-radius: 20px;
+    border-radius: 0px;
   }
   ::-webkit-scrollbar-track:hover {
     background: #080808;
@@ -86,7 +86,7 @@ const GlobalStyle = createGlobalStyle`
     --pages-color:#000000;
     --ballon-message: rgba(192, 192, 192, 0.7);
     --projects-bgd-ballons: #A3A3A3;
-    --projects-color-ballons: #FFFFFF;   
+    --projects-color-ballons: #000000; 
     --select: #B5C7D4;
     --img-background: url(${imageLight});
     --my-image: url(${myImage2});

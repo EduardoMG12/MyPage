@@ -23,16 +23,41 @@ export const Project = styled.div`
 
 export const Image = styled.div`
     height: 100%;
-    width: 30%;
+    width: 40%;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     border-radius: 6rem 0 0 6rem;
     `;
 
 export const ContentProject = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-
+    height: 90%;
+    & h2{
+    font-size: 3.5rem;
+    color:var(--projects-color-ballons);
+    }
+    & ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    li{
+        background-position: center;
+        background-size: cover;
+    }
+    }
     `;
+
+export const CodeAndDeploy = styled.div`
+    background-color: black;
+    width: 6rem;
+    height: 100%;
+    border-radius: 0 6rem 6rem 0;
+`;
+
+export const ItemHover = styled.div`
+`;
