@@ -7,6 +7,8 @@ import projectsDark from '/projectsDark.jpg'
 import projectsWhite from '/projectsWhite.jpg'
 import MyIcon from '/MyIcon.png'
 import MyIcon2 from '/MyIcon2.png'
+import bgdMediaDark from '/bgdHomeDarkMedia.jpg'
+import bgdMediaWhite from '/bgdHomeWhiteMedia.jpg'
 
 const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;700&display=swap');
@@ -26,6 +28,7 @@ const GlobalStyle = createGlobalStyle`
     --projects-color-ballons: #FFFFFF;   
     --select: #1F1D1E;
     --img-background: url(${imageDark});
+    --img-background-media: url(${bgdMediaDark});
     --my-image: url(${myImage});
     --my-icon: url(${MyIcon});
     
@@ -89,6 +92,7 @@ const GlobalStyle = createGlobalStyle`
     --projects-color-ballons: #000000; 
     --select: #B5C7D4;
     --img-background: url(${imageLight});
+    --img-background-media: url(${bgdMediaWhite});
     --my-image: url(${myImage2});
     --my-icon: url(${MyIcon2});
 
