@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components'
+import styled from 'styled-components'
 
 
 export const Container = styled.div`
@@ -16,6 +16,15 @@ export const HeroSection = styled.section`
     background-size: cover;   
     background-position: center;
     
+    @media (max-width:1000px) {
+        background-image: var(--img-background-media);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 100vh;
+        background-size: cover;   
+        background-position: center;
+    }
 `;
 
 export const HomeAbout = styled.section`

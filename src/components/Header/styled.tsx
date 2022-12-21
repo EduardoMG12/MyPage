@@ -116,6 +116,7 @@ export const List = styled.ul`
     display:flex;
     justify-content:center;
     gap: 5rem;
+      
     @media (max-width: 900px) {
     display:none;
     }
@@ -139,11 +140,12 @@ export const Items = styled(Link)`
         text-transform: capitalize;
         letter-spacing: 0.145em;
     }
-        :hover,p:hover,ul:hover{
+       &:hover,p:hover,ul:hover{
             transition: 0.3s transform ease-in-out;
             transition: 0.9s  letter-spacing ease-in-out;
             transform: translateY(-0.5rem);
             letter-spacing: 0.25rem;
         }
+ 
 `;
 

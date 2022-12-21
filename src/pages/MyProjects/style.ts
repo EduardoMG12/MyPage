@@ -4,14 +4,13 @@ export const Container = styled.div`
     width: 100%;
     min-height: 100vw;
     background-color: var(--pages-background);
-
 `;
 export const Apresentation = styled.div`
     width: 100%;
     height: 55vw;
     background: var(--img-background-projects) no-repeat;
     background-size: cover;
-    background-position: 0 -50rem;
+    background-position: 0 -25rem;
 
 `
 export const DivTittle = styled.div`
