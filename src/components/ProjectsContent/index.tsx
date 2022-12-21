@@ -30,10 +30,10 @@ export default function ProjectsContent() {
                 <Image style={{ backgroundImage: `url(${projects.image ? projects.image : 'https://images.unsplash.com/photo-1572177812156-58036aae439c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'})` }} />
                 <ContentProject>
                     <h2 className='tittleContent'>{projects.tittle}</h2>
-                    <p>{projects.sinopseLong}</p>
+                    <p id='sinopseLong'>{projects.sinopseLong}</p>
                     <p className='legendShort'>Principais Ferramentas</p>
                     <ul className='toolsProjects'>
-                        {Object.values(projects.iconTecnologics).map((tecnologic, i) => <li key={i} style={{ backgroundImage: `url(${tecnologic})`, width: "2rem", height: "2rem" }}></li>)}
+                        {Object.values(projects.iconTecnologics).map((tecnologic, i) => <li key={i} style={{ backgroundImage: `url(${tecnologic})`, width: "5rem", height: "5rem" }}></li>)}
                     </ul>
                 </ContentProject>
                 <CodeAndDeploy>
