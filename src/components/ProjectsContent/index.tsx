@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { Items } from '../Header/styled';
 import { CodeAndDeploy, Content, ContentProject, Image, ItemHover, ItemHover2, Project } from './style';
-import projects from '../../services/api/api'
+import projects from '../../services/api/api';
+import githubLogo from '/githubLogo.svg';
 
 interface IProjects {
     "id": number,
@@ -22,7 +23,7 @@ export default function ProjectsContent() {
                 <ContentProject>
                     <h2 className='tittleContent'>{projects.tittle}</h2>
                     <p id='sinopseLong'>{projects.sinopseLong}</p>
-                    <p className='legendShort'>Principais Ferramentas</p>
+                    <p className='legendShort'>Linguagens e tecnologias</p>
                     <ul className='toolsProjects'>
                         {Object.values(projects.iconTecnologics).map((tecnologic, i) => <li key={i} style={{ backgroundImage: `url(${tecnologic})`, width: "5rem", height: "5rem" }}></li>)}
                     </ul>
@@ -30,13 +31,13 @@ export default function ProjectsContent() {
                 <CodeAndDeploy className='divHover'>
 
                     {projects.codeAndDeploy.deploy.length == 0 ?
-                        <ItemHover style={{ backgroundColor: "red", height: "100%", borderRadius: "0 6rem 6rem 0" }}>
-                            <a href=""></a>
+                        <ItemHover className='itemHover' style={{ backgroundColor: "red", height: "100%", borderRadius: "0 6rem 6rem 0" }}>
+                            <a href={projects.codeAndDeploy.code} style={{}}><img style={{ transform: "rotate(90deg)", width: "5rem" }} src={githubLogo} /></a>
                         </ItemHover> :
 
                         <>
-                            <ItemHover style={{ height: "50%", backgroundColor: "red", borderRadius: "0 6rem 0 0" }}>
-                                <a href=""></a>
+                            <ItemHover className='itemHover' style={{ height: "50%", backgroundColor: "red", borderRadius: "0 6rem 0 0" }}>
+                                <a href={projects.codeAndDeploy.code} style={{}}><img style={{ width: "5rem" }} src={githubLogo} /></a>
                             </ItemHover>
                             <ItemHover style={{ height: "50%", borderRadius: "0 0 6rem 0", }}>
                                 <a href=""></a>

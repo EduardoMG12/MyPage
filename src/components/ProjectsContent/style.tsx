@@ -20,8 +20,10 @@ export const Project = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-     &:hover > .divHover{
-    display: flex;
+     &:hover .divHover{
+    pointer-events: all;
+    visibility: visible;
+    opacity: 1;
     }
 
 `;
@@ -63,18 +65,24 @@ export const ContentProject = styled.div`
         color:var(--projects-color-ballons);
     }
     `;
-//transition attributes?
+
 export const CodeAndDeploy = styled.div`
     background-color: black;
     width: 6rem;
     height: 100%;
     border-radius: 0 6rem 6rem 0;
-    display: none;
+    display: flex;
     flex-direction: column;
-    
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.9s  all ease-in-out;
 `;
 
 export const ItemHover = styled.div`
+display: flex; 
+align-items: center;
+justify-content: center;
 `;
 export const ItemHover2 = styled.div` 
 `

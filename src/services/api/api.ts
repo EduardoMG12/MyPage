@@ -27,10 +27,10 @@ const projects =
         },
         {
             "id": 2,
-            "tittle": "Calculadora",
+            "tittle": "Projeto Orange Juice",
             "image": "",
-            "sinopseShort": "",
-            "sinopseLong": "",
+            "sinopseShort": "Um hackthon desenvolvido para uma entrevista de emprego...",
+            "sinopseLong": "Hackthon para empresa FCâmara após duas etapas para filtrar competidores(uma prova e uma entrevista) veio o projeto que teve como objetivo que nós fizessemos um site para OrangeJuice(empresa da Fcamara) seguindo certas regras assim testando nosso conhecimento e tendo o mesmo como portifolio, aonde eu, dois Desenvolvedores e uma UX Design, passamos quinze dias desenvolvendo, sou muito grato por esse projeto, mesmo o mesmo não sendo concluido por nos mesmo, ganhei muito conhecimento e aprendizado nesses dias desde trabalho em grupo, sistema de branchs, react, insomnina...",
             "iconTecnologics": {
                 "tecnologics1": "asd",
                 "tecnologics2": "ASDASDA",
