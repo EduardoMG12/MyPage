@@ -8,6 +8,7 @@ export const Content = styled.div`
     justify-content: center;
     gap: 3rem;
     align-items: center;
+    padding-bottom: 3rem;
 `;
 
 export const Project = styled.div`
@@ -19,6 +20,10 @@ export const Project = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+     &:hover > .divHover{
+    display: flex;
+    }
+
 `;
 
 export const Image = styled.div`
@@ -58,13 +63,18 @@ export const ContentProject = styled.div`
         color:var(--projects-color-ballons);
     }
     `;
-
+//transition attributes?
 export const CodeAndDeploy = styled.div`
     background-color: black;
     width: 6rem;
     height: 100%;
     border-radius: 0 6rem 6rem 0;
+    display: none;
+    flex-direction: column;
+    
 `;
 
 export const ItemHover = styled.div`
 `;
+export const ItemHover2 = styled.div` 
+`

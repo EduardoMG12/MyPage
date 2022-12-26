@@ -46,8 +46,7 @@ const projects =
                     " "
                 ],
                 "deploy": [
-                    " ",
-                    " "
+                    ""
                 ]
             }
         },
