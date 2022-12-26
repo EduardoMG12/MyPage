@@ -126,7 +126,7 @@ const GlobalStyle = createGlobalStyle`
   }
   
   *{
-    border: 2px solid green;
+    /* border: 2px solid green; */
     margin: 0;
     padding: 0;
     box-sizing:border-box;
