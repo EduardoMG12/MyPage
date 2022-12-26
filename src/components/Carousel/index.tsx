@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
-import projects from '../../api'
-import Carousel from 'react-elastic-carousel'
-import api from '../../services/api'
-import { Container, Content, Image } from './style'
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import projects from '../../services/api/api';
+import Carousel from 'react-elastic-carousel';
+import { Container, Content, Image } from './style';
 
 interface IProjects {
     "id": number,

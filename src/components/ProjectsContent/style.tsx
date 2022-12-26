@@ -8,6 +8,7 @@ export const Content = styled.div`
     justify-content: center;
     gap: 3rem;
     align-items: center;
+    padding-bottom: 3rem;
 `;
 
 export const Project = styled.div`
@@ -19,6 +20,12 @@ export const Project = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+     &:hover .divHover{
+    pointer-events: all;
+    visibility: visible;
+    opacity: 1;
+    }
+
 `;
 
 export const Image = styled.div`
@@ -64,7 +71,49 @@ export const CodeAndDeploy = styled.div`
     width: 6rem;
     height: 100%;
     border-radius: 0 6rem 6rem 0;
+    display: flex;
+    flex-direction: column;
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.9s  all ease-in-out;
 `;
 
 export const ItemHover = styled.div`
+display: flex; 
+align-items: center;
+justify-content: center;
+.githubLogo{
+    transform: rotate(90deg);
+    transition: 0.4s ease-in-out transform;
+}
+.vercelLogo1{
+    width: 10rem;
+    transform: rotate(90deg);
+    transition: 1s ease-in all;
+}
+.vercelLogo2{
+    opacity:0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: 1s ease-in all;
+    width: 5rem;
+}
+ &:hover .githubLogo{
+     transform: rotate(0deg);
+}
+ &:hover .vercelLogo1{
+    transform: rotate(0deg);
+    opacity:0;
+    visibility: hidden;
+    width: 0;
+
+ }
+ &:hover .vercelLogo2{
+    opacity:1;
+    visibility: visible;
+    pointer-events: all;
+}
 `;
+export const ItemHover2 = styled.div` 
+`

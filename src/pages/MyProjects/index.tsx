@@ -17,7 +17,7 @@ export default function () {
                 trigger: el,
                 toggleActions: "play reverse reverse resume",
                 start: "top top",
-                end: "190% top",
+                end: "130% top",
                 markers: false,
                 pin: true,
                 pinSpacing: false,
