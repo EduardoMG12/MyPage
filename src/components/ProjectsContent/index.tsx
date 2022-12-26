@@ -3,7 +3,8 @@ import { Items } from '../Header/styled';
 import { CodeAndDeploy, Content, ContentProject, Image, ItemHover, ItemHover2, Project } from './style';
 import projects from '../../services/api/api';
 import githubLogo from '/githubLogo.svg';
-
+import vercelLogo from '/vercelLogo.svg';
+import vercelLogoText from '/vercelLogoText.svg'
 interface IProjects {
     "id": number,
     "tittle": string,
@@ -31,16 +32,21 @@ export default function ProjectsContent() {
                 <CodeAndDeploy className='divHover'>
 
                     {projects.codeAndDeploy.deploy.length == 0 ?
-                        <ItemHover className='itemHover' style={{ backgroundColor: "red", height: "100%", borderRadius: "0 6rem 6rem 0" }}>
-                            <a href={projects.codeAndDeploy.code} style={{}}><img style={{ transform: "rotate(90deg)", width: "5rem" }} src={githubLogo} /></a>
+                        <ItemHover className='itemHover' style={{ backgroundColor: "#0D0D0D", height: "100%", borderRadius: "0 6rem 6rem 0" }}>
+                            <a href={projects.codeAndDeploy.code} target="_blank"><img className="githubLogo" style={{ width: "5rem" }} src={githubLogo} /></a>
                         </ItemHover> :
 
                         <>
-                            <ItemHover className='itemHover' style={{ height: "50%", backgroundColor: "red", borderRadius: "0 6rem 0 0" }}>
-                                <a href={projects.codeAndDeploy.code} style={{}}><img style={{ width: "5rem" }} src={githubLogo} /></a>
+                            <ItemHover className='itemHover' style={{ height: "50%", backgroundColor: "#0D0D0D", borderRadius: "0 6rem 0 0" }}>
+                                <a href={projects.codeAndDeploy.code} target="_blank" style={{}}>
+                                    <img className="githubLogo" style={{ width: "5rem" }} src={githubLogo} />
+                                </a>
                             </ItemHover>
                             <ItemHover style={{ height: "50%", borderRadius: "0 0 6rem 0", }}>
-                                <a href=""></a>
+                                <a href={projects.codeAndDeploy.deploy} target="_blank" style={{ display: "flex", flexDirection: "column" }}>
+                                    <img className="vercelLogo1" src={vercelLogoText} alt="" />
+                                    <img className="vercelLogo2" src={vercelLogo} alt="" />
+                                </a>
                             </ItemHover>
                         </>
                     }
