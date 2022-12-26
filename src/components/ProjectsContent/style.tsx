@@ -44,11 +44,18 @@ export const ContentProject = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
+    height: 3rem;
     li{
         background-position: center;
         background-size: cover;
     }
+    
+    }
+    #sinopseLong{
+        width: 80rem;
+        font-size: 2rem;
+        color:var(--projects-color-ballons);
     }
     `;
 
