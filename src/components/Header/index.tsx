@@ -23,11 +23,11 @@ export default function () {
                             <li><Items to="/"><p>Conhecimentos/Ferramentos</p></Items></li>
                             <li><Items to="MyProjects"><p>Projetos</p></Items></li>
                             <ButtonTheme />
-                        </List>
+                        </List >
                         <Hamburguer />
-                    </Navegation>
-                </ContainerHeader>
-            </Header>
+                    </Navegation >
+                </ContainerHeader >
+            </Header >
         </>
     )
 }
