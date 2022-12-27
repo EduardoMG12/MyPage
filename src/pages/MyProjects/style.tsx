@@ -17,7 +17,7 @@ export const DivTittle = styled.div`
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-bottom: 40rem;
+    margin-block: 50rem;
 `;
 
 export const Tittle = styled.h2`

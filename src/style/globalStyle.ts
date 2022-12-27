@@ -40,7 +40,7 @@ const GlobalStyle = createGlobalStyle`
     --button-SubColorTheme:rgba(0, 0, 0, 1);
     --visibility-ThemeWhite: visible;
     --visibility-ThemeDark: hidden;
-    --height-sun:0rem;
+    --height-sun: 0rem;
 
     //Projects
     --img-background-projects: url(${projectsDark});
@@ -104,7 +104,7 @@ const GlobalStyle = createGlobalStyle`
     --button-SubColorTheme:#FDB813;
     --visibility-ThemeWhite: hidden;
     --visibility-ThemeDark: visible;
-    --height-sun:1.3rem;
+    --height-sun: 1.3rem;
 
     //Projects
     --img-background-projects: url(${projectsWhite});
