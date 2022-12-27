@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
-
-import Carousel from 'react-elastic-carousel'
-import api from '../../services/api'
-import { Container, Content, Image } from './style'
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import projects from '../../services/api/api';
+import Carousel from 'react-elastic-carousel';
+import { Container, Content, Image } from './style';
 
 interface IProjects {
     "id": number,
@@ -23,15 +22,6 @@ export default () => {
         { width: 768, itemToShow: 3 },
         { width: 1200, itemToShow: 4 },
     ]
-
-    const [projects, setProjects] = useState<IProjects[]>([])
-
-    useEffect(() => {
-        api.get("/projects").then((response) => {
-            setProjects(response.data)
-        }).catch((error) => { console.log(error) });
-
-    }, [])
 
     const itemShow = () => {
         const largura = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
