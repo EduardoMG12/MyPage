@@ -6,6 +6,7 @@ export const Header = styled.header`
     top: 0;
     left: 0;
     display: flex;
+    z-index: 1000;
     justify-content: center;
     align-items: center;
     height: 7.5rem;
@@ -35,30 +36,7 @@ export const Logo = styled.div`
     gap: 2rem;
 `;
 
-export const ButtonTheme = styled.div`
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: var(--button-BgdTheme);
-    left: 10px;
-    width: 5rem;
-    height: 2.2rem;
-    display: flex;
-    align-items: center;
-    justify-content: var(--button-ThemePositon);    
-    border-radius: 20px;
-    
-    span{
-        position: absolute;
-        left: 38px;
-        transform: var(--transorm-ThemePosition);
-        background-color: var(--button-ColorTheme);
-        width: 2.4rem;
-        height: 2.4rem;
-        border-radius: 50%;
-        transition: 0.3s all linear;
-    }
-`;
+
 
 export const NameLogo = styled.div`
 @keyframes expandText {
@@ -138,8 +116,17 @@ export const List = styled.ul`
     display:flex;
     justify-content:center;
     gap: 5rem;
+      
     @media (max-width: 900px) {
     display:none;
+    }
+    @media (max-width: 1600px) {
+    gap: 3rem;
+    margin-right: 2rem
+    }
+    @media (max-width: 1100px) {
+    gap: 2rem;
+    margin-right: 4rem
     }
 `;
 
@@ -153,11 +140,12 @@ export const Items = styled(Link)`
         text-transform: capitalize;
         letter-spacing: 0.145em;
     }
-        :hover,p:hover,ul:hover{
+       &:hover,p:hover,ul:hover{
             transition: 0.3s transform ease-in-out;
             transition: 0.9s  letter-spacing ease-in-out;
             transform: translateY(-0.5rem);
             letter-spacing: 0.25rem;
         }
+ 
 `;
 

@@ -1,5 +1,12 @@
-import React from 'react'
-import { Container, HeroSection, HomeAbout, MyImg } from './style'
+import React, { useEffect, useRef } from 'react'
+import { BallonAbout, Container, HeroSection, HomeAbout, MyImg, ProjectsContainer } from './style'
+import { gsap } from 'gsap';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import Carousel from '../../components/Carousel'
+
+gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollToPlugin);
 
 export default function home() {
     const years = () => {
@@ -8,24 +15,93 @@ export default function home() {
         const birthDate = new Date(dateString);
         let age = today.getFullYear() - birthDate.getFullYear();
         const monthValidation = today.getMonth() - birthDate.getMonth();
-
         if (monthValidation < 0 || (monthValidation === 0 && today.getDate() < birthDate.getDate())) {
             age--;
         }
-
         return age;
     }
     const randomImage = () => {
         const random = Boolean(Math.round(Math.random()));
         return random == true ? "var(--my-image)" : "var(--my-icon)"
     }
+    const backgroundRef = useRef(null);
+    useEffect(() => {
+        const el = backgroundRef.current
+        gsap.to(el, {
+            scrollTrigger: {
+                trigger: el,
+                toggleActions: "play reverse reverse resume",
+                start: "top top",
+                end: "190% top",
+                markers: false,
+                pin: true,
+                pinSpacing: false,
+                scrub: 1
+            },
+            opacity: 0,
+            y: 20,
+            duration: 0.1
+        })
+    }, [])
+    const imgRef = useRef(null);
+    useEffect(() => {
+        const el = imgRef.current
+        console.log(imgRef)
+
+        gsap.to(el, {
+            scrollTrigger: {
+                trigger: el,
+                toggleActions: "play reverse reverse resume",
+                start: "400px center", end: "center center",
+                markers: false,
+                pin: true,
+                scrub: 2,
+            },
+            opacity: 0,
+            y: -700,
+            display: 'none',
+            duration: 0.1
+        })
+    }, [])
+    const ballonRef = useRef(null);
+    useEffect(() => {
+        const el = ballonRef.current
+        console.log(imgRef)
+        gsap.to(el, {
+            scrollTrigger: {
+                trigger: el,
+                toggleActions: "play reverse reverse resume",
+                start: "400px center",
+                end: "center center",
+                markers: false,
+                pin: true,
+                pinSpacing: false,
+                scrub: 2,
+            },
+            opacity: 0,
+            y: -700,
+            display: 'none',
+            duration: 0.1
+        })
+    }, [])
     return (
         <Container>
-            <HeroSection />
+            <HeroSection ref={backgroundRef} />
             <HomeAbout>
-                <MyImg style={{ backgroundImage: randomImage() }} />
-                <p>Seja bem-vindo eu sou Charles Eduardo tenho {years()}</p>
+                <MyImg ref={imgRef} style={{ backgroundImage: randomImage() }} />
+                <BallonAbout ref={ballonRef} style={{ padding: "8rem 6rem" }}>
+                    <p> Olá eu sou Charles Eduardo, tenho {years()} anos moro no Paraná. Desde a minha adolescencia sempre gostei/joguei muitos jogos oque acho que pode ter influênciado muito a decisão da área que estou seguindo.</p>
+                </BallonAbout>
             </HomeAbout>
+
+            <ProjectsContainer>
+                <div className="tittle">
+                    <h2>Alguns Projetos</h2>
+                    <p>para mais <a href="">projetos</a></p>
+                </div>
+                <Carousel />
+            </ProjectsContainer>
+
         </Container>
     )
 }
