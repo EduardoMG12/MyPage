@@ -4,15 +4,6 @@ import projects from '../../services/api/api';
 import Carousel from 'react-elastic-carousel';
 import { Container, Content, Image } from './style';
 
-interface IProjects {
-    "id": number,
-    "tittle": string,
-    "image": string,
-    "sinopseShort": string,
-    "sinopseLong": string,
-    "iconTecnologics": Record<string, string>,
-
-};
 
 export default () => {
 
