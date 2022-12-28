@@ -6,16 +6,6 @@ import githubLogo from '/githubLogo.svg';
 import vercelLogo from '/vercelLogo.svg';
 import vercelLogoText from '/vercelLogoText.svg'
 
-interface IProjects {
-    "id": number,
-    "tittle": string,
-    "image": string,
-    "sinopseShort": string,
-    "sinopseLong": string,
-    "iconTecnologics": Record<string, string>,
-    "codeAndDeploy": Record<string, []>
-};
-
 export default function ProjectsContent() {
 
     const projectsDB: any[] = projects.map((projects) => {
@@ -26,8 +16,9 @@ export default function ProjectsContent() {
                     <h2 className='tittleContent'>{projects.tittle}</h2>
                     <p>{projects.sinopseLong}</p>
                     <p className='legendShort'>Principais Ferramentas</p>
+
                     <ul className='toolsProjects'>
-                        {Object.values(projects.iconTecnologics).map((tecnologic, i) => <li key={i} style={{ backgroundImage: `url(${tecnologic})`, width: "5rem", height: "5rem" }}></li>)}
+                        {Object.values(projects.iconTecnologics).map((tecnologic, i) => <li key={i} ><i style={{ fontSize: "5rem", color: tecnologic.color }} className={tecnologic.class}></i></li>)}
                     </ul>
                 </ContentProject>
                 <CodeAndDeploy className='divHover'>
