@@ -60,10 +60,15 @@ export const ContentProject = styled.div`
     
     }
     #sinopseLong{
-        width: 80rem;
+        width: 60rem;
         font-size: 2rem;
         color:var(--projects-color-ballons);
     }
+    #legendShort{
+        font-size: 2.2rem;
+
+    }
+
     `;
 
 export const CodeAndDeploy = styled.div`
@@ -80,40 +85,40 @@ export const CodeAndDeploy = styled.div`
 `;
 
 export const ItemHover = styled.div`
-display: flex; 
-align-items: center;
-justify-content: center;
-.githubLogo{
-    transform: rotate(90deg);
-    transition: 0.4s ease-in-out transform;
-}
-.vercelLogo1{
-    width: 10rem;
-    transform: rotate(90deg);
-    transition: 1s ease-in all;
-}
-.vercelLogo2{
-    opacity:0;
-    visibility: hidden;
-    pointer-events: none;
-    transition: 1s ease-in all;
-    width: 5rem;
-}
- &:hover .githubLogo{
-     transform: rotate(0deg);
-}
- &:hover .vercelLogo1{
-    transform: rotate(0deg);
-    opacity:0;
-    visibility: hidden;
-    width: 0;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    .githubLogo{
+        transform: rotate(90deg);
+        transition: 0.4s ease-in-out transform;
+    }
+    .vercelLogo1{
+        width: 10rem;
+        transform: rotate(90deg);
+        transition: 1s ease-in all;
+    }
+    .vercelLogo2{
+        opacity:0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: 1s ease-in all;
+        width: 5rem;
+    }
+    &:hover .githubLogo{
+        transform: rotate(0deg);
+    }
+    &:hover .vercelLogo1{
+        transform: rotate(0deg);
+        opacity:0;
+        visibility: hidden;
+        width: 0;
 
- }
- &:hover .vercelLogo2{
-    opacity:1;
-    visibility: visible;
-    pointer-events: all;
-}
+    }
+    &:hover .vercelLogo2{
+        opacity:1;
+        visibility: visible;
+        pointer-events: all;
+    }
 `;
 export const ItemHover2 = styled.div` 
 `

@@ -37,6 +37,31 @@ const projects: IProjects[] =
         },
         {
             "id": 2,
+            "tittle": "Landing Page",
+            "image": "projectsImages/landingPage.png",
+            "sinopseShort": "landing page com uma breve historia sobre eu e aprensetaçao",
+            "sinopseLong": "Um projeto que fiz em contructor function quando estava pegando a base do js fiz o mesmo com constructor function e depois refatorei o memo para factory function No gênero dissertativo-argumentativo, o projeto ajuda a organizar as ideias, garantir a progressão textual e colaborar na construção de uma argumentação consistente em defesa de um ponto de vista, explica Fabiana Gomes de Camargo, professora de Redação e coordenadora da Área de Linguagens do Colégio Oficina do Estudante de Campinas (SP) Segundo a cartilha de correção de redação do Enem, o projeto de texto é um esquema geral da estrutura de um texto, no qual se estabelecem os principais pontos pelos quais deve passar a argumentação a ser desenvolvida, isto é, um planejamento prévio que se deixa perceber pela organização dos argumentos presentes no texto final.",
+            "iconTecnologics": {
+                "JavaScript": {
+                    "class": "fa-brands fa-js",
+                    "color": "#EAD41C"
+                },
+                "HTML": {
+                    "class": "fa-brands fa-html5",
+                    "color": "#E56027"
+                },
+                "CSS": {
+                    "class": "fa-brands fa-css3-alt",
+                    "color": "#2C9FD8"
+                },
+            },
+            "codeAndDeploy": {
+                "code": "https://github.com/EduardoMG12/landing-page-basic-all-black",
+                "deploy": "https://landing-page-basic-all-black-3beceh95r-eduardomg12.vercel.app"
+            }
+        },
+        {
+            "id": 3,
             "tittle": "Calculadora",
             "image": "projectsImages/calculator.png",
             "sinopseShort": "Calculadora feita em js com factory function",
@@ -61,7 +86,7 @@ const projects: IProjects[] =
             }
         },
         {
-            "id": 3,
+            "id": 4,
             "tittle": "To-do List",
             "image": "projectsImages/toDoList.png",
             "sinopseShort": "Calculadora feita em js com factory function",
@@ -86,9 +111,9 @@ const projects: IProjects[] =
             }
         },
         {
-            "id": 4,
+            "id": 5,
             "tittle": "Timer",
-            "image": "projectsImages/Timer.png",
+            "image": "projectsImages/timer.png",
             "sinopseShort": "Calculadora feita em js com factory function",
             "sinopseLong": "",
             "iconTecnologics": {
@@ -111,31 +136,7 @@ const projects: IProjects[] =
                 "deploy": ""
             }
         },
-        {
-            "id": 5,
-            "tittle": "Timer",
-            "image": "",
-            "sinopseShort": "Calculadora feita em js com factory function",
-            "sinopseLong": "",
-            "iconTecnologics": {
-                "JavaScript": {
-                    "class": "fa-brands fa-js",
-                    "color": "#EAD41C"
-                },
-                "HTML": {
-                    "class": "fa-brands fa-html5",
-                    "color": "#E56027"
-                },
-                "CSS": {
-                    "class": "fa-brands fa-css3-alt",
-                    "color": "#2C9FD8"
-                },
-            },
-            "codeAndDeploy": {
-                "code": "",
-                "deploy": ""
-            }
-        }
+
     ]
 
 export default projects;
