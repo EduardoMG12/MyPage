@@ -15,7 +15,7 @@ const projects: IProjects[] =
             "tittle": "Projeto Orange Juice",
             "image": "",
             "sinopseShort": "Um hackthon desenvolvido para uma entrevista de emprego...",
-            "sinopseLong": "Hackthon para empresa FCâmara após duas etapas para filtrar competidores(uma prova e uma entrevista) veio o projeto que teve como objetivo que nós fizessemos um site para OrangeJuice(empresa da Fcamara) seguindo certas regras assim testando nosso conhecimento e tendo o mesmo como portifolio, aonde eu, dois Desenvolvedores e uma UX Design, passamos quinze dias desenvolvendo, sou muito grato por esse projeto, mesmo o mesmo não sendo concluido por nos mesmo, ganhei muito conhecimento e aprendizado nesses dias desde trabalho em grupo, sistema de branchs, react, insomnina...",
+            "sinopseLong": "Hackthon para empresa FCâmara após duas etapas para filtrar competidores(uma prova e uma entrevista) veio o projeto que teve como objetivo que nós fizessemos um site para OrangeJuice(empresa da Fcamara) seguindo certas regras assim testando nosso conhecimento e tendo o mesmo como portifolio, aonde eu, dois Desenvolvedores e uma UX Design, passamos quinze dias desenvolvendo um site que tinha como objetivo ter login de úsuarios e admins, 3 trilhas principais, entrando nas mesmas teriam vários cursos. O objetivo principal era entregar um crud, 3 páginas prontas, sou muito grato por esse projeto, mesmo o mesmo não sendo concluido por falta de tempo e por falta de organização pois a maioria(incluindo eu) nunca tinha feito um projeto em equipe, senti ter ganho muito conhecimento e aprendizado nesses dias pois foi muito puxado nunca tinha me dedicado tanto a um projeto em tão pouco tempo, acho que ocorreu um grande desenvolvimento desde trabalho em grupo, sistema de branchs, react, insomnina...",
             "iconTecnologics": {
                 "JavaScript": {
                     "class": "fa-brands fa-js",
@@ -52,7 +52,7 @@ const projects: IProjects[] =
             "tittle": "Landing Page",
             "image": "projectsImages/landingPage.png",
             "sinopseShort": "landing page com uma breve historia sobre eu e aprensetaçao",
-            "sinopseLong": "Um projeto que fiz em contructor function quando estava pegando a base do js fiz o mesmo com constructor function e depois refatorei o memo para factory function No gênero dissertativo-argumentativo, o projeto ajuda a organizar as ideias, garantir a progressão textual e colaborar na construção de uma argumentação consistente em defesa de um ponto de vista, explica Fabiana Gomes de Camargo, professora de Redação e coordenadora da Área de Linguagens do Colégio Oficina do Estudante de Campinas (SP) Segundo a cartilha de correção de redação do Enem, o projeto de texto é um esquema geral da estrutura de um texto, no qual se estabelecem os principais pontos pelos quais deve passar a argumentação a ser desenvolvida, isto é, um planejamento prévio que se deixa perceber pela organização dos argumentos presentes no texto final.",
+            "sinopseLong": "Um projeto que fiz com o objetivo de treinar/testar meus conhecimentos de html css e js, um projeto simples porem funcional, que tem como premissa ser uma página contando um pouco da minha hístoria e me apresentando, mostrando minhas midias profissionais.",
             "iconTecnologics": {
                 "JavaScript": {
                     "class": "fa-brands fa-js",
@@ -77,7 +77,7 @@ const projects: IProjects[] =
             "tittle": "Calculadora",
             "image": "projectsImages/calculator.png",
             "sinopseShort": "Calculadora feita em js com factory function",
-            "sinopseLong": "Um projeto que fiz em contructor function quando estava pegando a base do js fiz o mesmo com constructor function e depois refatorei o memo para factory function No gênero dissertativo-argumentativo, o projeto ajuda a organizar as ideias, garantir a progressão textual e colaborar na construção de uma argumentação consistente em defesa de um ponto de vista, explica Fabiana Gomes de Camargo, professora de Redação e coordenadora da Área de Linguagens do Colégio Oficina do Estudante de Campinas (SP) Segundo a cartilha de correção de redação do Enem, o projeto de texto é um esquema geral da estrutura de um texto, no qual se estabelecem os principais pontos pelos quais deve passar a argumentação a ser desenvolvida, isto é, um planejamento prévio que se deixa perceber pela organização dos argumentos presentes no texto final.",
+            "sinopseLong": "Um exercicio de um curso que fiz, que é um projeto feito em facroty function, fiz quando estava pegando a base do js o mesmo foi feito primeiramente em constructor function e depois refatorado para factory function.",
             "iconTecnologics": {
                 "JavaScript": {
                     "class": "fa-brands fa-js",
@@ -102,7 +102,7 @@ const projects: IProjects[] =
             "tittle": "To-do List",
             "image": "projectsImages/toDoList.png",
             "sinopseShort": "Calculadora feita em js com factory function",
-            "sinopseLong": "Um projeto que fiz em contructor function quando estava pegando a base do js fiz o mesmo com constructor function e depois refatorei o memo para factory function No gênero dissertativo-argumentativo, o projeto ajuda a organizar as ideias, garantir a progressão textual e colaborar na construção de uma argumentação consistente em defesa de um ponto de vista, explica Fabiana Gomes de Camargo, professora de Redação e coordenadora da Área de Linguagens do Colégio Oficina do Estudante de Campinas (SP) Segundo a cartilha de correção de redação do Enem, o projeto de texto é um esquema geral da estrutura de um texto, no qual se estabelecem os principais pontos pelos quais deve passar a argumentação a ser desenvolvida, isto é, um planejamento prévio que se deixa perceber pela organização dos argumentos presentes no texto final.",
+            "sinopseLong": "O projeto ajuda a organizar as ideias o objetivo é ser uma lista de a fazeres aonde você mesmo consegue colocar e deletar itens, a mesma tem a função de deletar os a fazeres apertando no botão e de adicionar apertando no botão ou apertando enter. A página é completamente responsivel.",
             "iconTecnologics": {
                 "JavaScript": {
                     "class": "fa-brands fa-js",
@@ -127,7 +127,7 @@ const projects: IProjects[] =
             "tittle": "Timer",
             "image": "projectsImages/timer.png",
             "sinopseShort": "Calculadora feita em js com factory function",
-            "sinopseLong": "Um projeto que fiz em contructor function quando estava pegando a base do js fiz o mesmo com constructor function e depois refatorei o memo para factory function No gênero dissertativo-argumentativo, o projeto ajuda a organizar as ideias, garantir a progressão textual e colaborar na construção de uma argumentação consistente em defesa de um ponto de vista, explica Fabiana Gomes de Camargo, professora de Redação e coordenadora da Área de Linguagens do Colégio Oficina do Estudante de Campinas (SP) Segundo a cartilha de correção de redação do Enem, o projeto de texto é um esquema geral da estrutura de um texto, no qual se estabelecem os principais pontos pelos quais deve passar a argumentação a ser desenvolvida, isto é, um planejamento prévio que se deixa perceber pela organização dos argumentos presentes no texto final. Um projeto que fiz em contructor function quando estava pegando a base do js fiz o mesmo com constructor function e depois refatorei o ",
+            "sinopseLong": "Um projeto simples porem funcional de um timer com três botões, reset para zerar o timer, pause para parar e init para começar a contar ou continuar, o projeto sendo funcional e responsivo.",
             "iconTecnologics": {
                 "JavaScript": {
                     "class": "fa-brands fa-js",
