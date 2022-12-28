@@ -46,7 +46,7 @@ export default () => {
                     <h2 className='tittleContent'>{projects.tittle}</h2>
                     <p className='legendShort'>Principais Ferramentas</p>
                     <ul className='toolsProjects'>
-                        {Object.values(projects.iconTecnologics).map((tecnologic, i) => <li key={i} style={{ backgroundImage: `url(${tecnologic})` }}></li>)}
+                        {Object.values(projects.iconTecnologics).map((tecnologic, i) => <li key={i}><i className={tecnologic.class} style={{ fontSize: "3.5rem", color: tecnologic.color }}></i></li>)}
                     </ul>
                 </Content>
             </Container>

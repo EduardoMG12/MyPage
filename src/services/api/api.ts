@@ -21,14 +21,26 @@ const projects: IProjects[] =
                     "class": "fa-brands fa-js",
                     "color": "#EAD41C"
                 },
-                "HTML": {
-                    "class": "fa-brands fa-html5",
-                    "color": "orange"
-                },
-                "CSS": {
-                    "class": "fa-brands fa-css3-alt",
+                "TypeScript": {
+                    "class": "devicon-typescript-plain",
                     "color": "#2C9FD8"
                 },
+                "Next": {
+                    "class": "devicon-nextjs-original",
+                    "color": "black"
+                },
+                "React": {
+                    "class": "fa-brands fa-react",
+                    "color": "#2C9FD8"
+                },
+                "NODE": {
+                    "class": "fa-brands fa-node-js",
+                    "color": "orange"
+                },
+                "Mongo": {
+                    "class": "devicon-mongodb-plain",
+                    "color": "green"
+                }
             },
             "codeAndDeploy": {
                 "code": "https://github.com/orgs/orange-squad28/repositories",
@@ -115,7 +127,7 @@ const projects: IProjects[] =
             "tittle": "Timer",
             "image": "projectsImages/timer.png",
             "sinopseShort": "Calculadora feita em js com factory function",
-            "sinopseLong": "Um projeto que fiz em contructor function quando estava pegando a base do js fiz o mesmo com constructor function e depois refatorei o memo para factory function No gênero dissertativo-argumentativo, o projeto ajuda a organizar as ideias, garantir a progressão textual e colaborar na construção de uma argumentação consistente em defesa de um ponto de vista, explica Fabiana Gomes de Camargo, professora de Redação e coordenadora da Área de Linguagens do Colégio Oficina do Estudante de Campinas (SP) Segundo a cartilha de correção de redação do Enem, o projeto de texto é um esquema geral da estrutura de um texto, no qual se estabelecem os principais pontos pelos quais deve passar a argumentação a ser desenvolvida, isto é, um planejamento prévio que se deixa perceber pela organização dos argumentos presentes no texto final. Um projeto que fiz em contructor function quando estava pegando a base do js fiz o mesmo com constructor function e depois refatorei o memo para factory function No gênero dissertativo-argumentativo, o projeto ajuda a organizar as ideias, garantir a progressão textual e colaborar na construção de uma argumentação consistente em defesa de um ponto de vista, explica Fabiana Gomes de Camargo, professora de Redação e coordenadora da Área de Linguagens do Colégio Oficina do Estudante de Campinas (SP) Segundo a cartilha de correção de redação do Enem, o projeto de texto é um esquema geral da estrutura de um texto, no qual se estabelecem os principais pontos pelos quais deve passar a argumentação a ser desenvolvida, isto é, um planejamento prévio que se deixa perceber pela organização dos argumentos presentes no texto final.",
+            "sinopseLong": "Um projeto que fiz em contructor function quando estava pegando a base do js fiz o mesmo com constructor function e depois refatorei o memo para factory function No gênero dissertativo-argumentativo, o projeto ajuda a organizar as ideias, garantir a progressão textual e colaborar na construção de uma argumentação consistente em defesa de um ponto de vista, explica Fabiana Gomes de Camargo, professora de Redação e coordenadora da Área de Linguagens do Colégio Oficina do Estudante de Campinas (SP) Segundo a cartilha de correção de redação do Enem, o projeto de texto é um esquema geral da estrutura de um texto, no qual se estabelecem os principais pontos pelos quais deve passar a argumentação a ser desenvolvida, isto é, um planejamento prévio que se deixa perceber pela organização dos argumentos presentes no texto final. Um projeto que fiz em contructor function quando estava pegando a base do js fiz o mesmo com constructor function e depois refatorei o ",
             "iconTecnologics": {
                 "JavaScript": {
                     "class": "fa-brands fa-js",

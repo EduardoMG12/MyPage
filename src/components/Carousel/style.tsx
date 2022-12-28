@@ -40,8 +40,8 @@ export const Content = styled.div`
     display: flex;
     justify-content: space-evenly;
         & li{
-        width: 2rem;
-        height: 2rem;
+        width: 3.5rem;
+        height: 3.5rem;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
