@@ -90,7 +90,7 @@ const projects: IProjects[] =
             "tittle": "To-do List",
             "image": "projectsImages/toDoList.png",
             "sinopseShort": "Calculadora feita em js com factory function",
-            "sinopseLong": "",
+            "sinopseLong": "Um projeto que fiz em contructor function quando estava pegando a base do js fiz o mesmo com constructor function e depois refatorei o memo para factory function No gênero dissertativo-argumentativo, o projeto ajuda a organizar as ideias, garantir a progressão textual e colaborar na construção de uma argumentação consistente em defesa de um ponto de vista, explica Fabiana Gomes de Camargo, professora de Redação e coordenadora da Área de Linguagens do Colégio Oficina do Estudante de Campinas (SP) Segundo a cartilha de correção de redação do Enem, o projeto de texto é um esquema geral da estrutura de um texto, no qual se estabelecem os principais pontos pelos quais deve passar a argumentação a ser desenvolvida, isto é, um planejamento prévio que se deixa perceber pela organização dos argumentos presentes no texto final.",
             "iconTecnologics": {
                 "JavaScript": {
                     "class": "fa-brands fa-js",
@@ -115,7 +115,7 @@ const projects: IProjects[] =
             "tittle": "Timer",
             "image": "projectsImages/timer.png",
             "sinopseShort": "Calculadora feita em js com factory function",
-            "sinopseLong": "",
+            "sinopseLong": "Um projeto que fiz em contructor function quando estava pegando a base do js fiz o mesmo com constructor function e depois refatorei o memo para factory function No gênero dissertativo-argumentativo, o projeto ajuda a organizar as ideias, garantir a progressão textual e colaborar na construção de uma argumentação consistente em defesa de um ponto de vista, explica Fabiana Gomes de Camargo, professora de Redação e coordenadora da Área de Linguagens do Colégio Oficina do Estudante de Campinas (SP) Segundo a cartilha de correção de redação do Enem, o projeto de texto é um esquema geral da estrutura de um texto, no qual se estabelecem os principais pontos pelos quais deve passar a argumentação a ser desenvolvida, isto é, um planejamento prévio que se deixa perceber pela organização dos argumentos presentes no texto final. Um projeto que fiz em contructor function quando estava pegando a base do js fiz o mesmo com constructor function e depois refatorei o memo para factory function No gênero dissertativo-argumentativo, o projeto ajuda a organizar as ideias, garantir a progressão textual e colaborar na construção de uma argumentação consistente em defesa de um ponto de vista, explica Fabiana Gomes de Camargo, professora de Redação e coordenadora da Área de Linguagens do Colégio Oficina do Estudante de Campinas (SP) Segundo a cartilha de correção de redação do Enem, o projeto de texto é um esquema geral da estrutura de um texto, no qual se estabelecem os principais pontos pelos quais deve passar a argumentação a ser desenvolvida, isto é, um planejamento prévio que se deixa perceber pela organização dos argumentos presentes no texto final.",
             "iconTecnologics": {
                 "JavaScript": {
                     "class": "fa-brands fa-js",
