@@ -9,6 +9,10 @@ export const Content = styled.div`
     gap: 3rem;
     align-items: center;
     padding-bottom: 3rem;
+    h1{
+    font-size: 3rem;
+    font-family: var(--fontFamily-Sora);
+    }
 `;
 
 export const Project = styled.div`
