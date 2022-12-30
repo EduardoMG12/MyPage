@@ -48,31 +48,6 @@ const projects: IProjects[] =
             }
         },
         {
-            "id": 2,
-            "tittle": "Freelancer",
-            "image": "projectsImages/frellancerJulio.png",
-            "sinopseShort": "landing page com uma breve historia sobre eu e aprensetaçao",
-            "sinopseLong": "Um projeto que fiz com o objetivo de treinar/testar meus conhecimentos de html css e js, um projeto simples porem funcional, que tem como premissa ser uma página contando um pouco da minha hístoria e me apresentando, mostrando minhas midias profissionais.",
-            "iconTecnologics": {
-                "JavaScript": {
-                    "class": "fa-brands fa-js",
-                    "color": "#EAD41C"
-                },
-                "HTML": {
-                    "class": "fa-brands fa-html5",
-                    "color": "#E56027"
-                },
-                "CSS": {
-                    "class": "fa-brands fa-css3-alt",
-                    "color": "#2C9FD8"
-                },
-            },
-            "codeAndDeploy": {
-                "code": "https://github.com/EduardoMG12/landing-page-basic-all-black",
-                "deploy": "https://landing-page-basic-all-black-3beceh95r-eduardomg12.vercel.app"
-            }
-        },
-        {
             "id": 3,
             "tittle": "Landing Page",
             "image": "projectsImages/landingPage.png",

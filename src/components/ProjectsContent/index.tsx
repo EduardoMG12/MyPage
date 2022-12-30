@@ -7,7 +7,17 @@ import vercelLogo from '/vercelLogo.svg';
 import vercelLogoText from '/vercelLogoText.svg'
 
 export default function ProjectsContent() {
+    const itemHoverStyleMapFirstCondition = {
+        backgroundColor: "#0D0D0D",
+        height: "100%",
+        borderRadius: "0 6rem 6rem 0"
+    }
+    const itemHoverStyleMapLastCondition = {
+        backgroundColor: "#0D0D0D",
+        height: "50%",
+        borderRadius: "0 6rem 0 0"
 
+    }
     const projectsDB: any[] = projects.map((projects) => {
         return (
             <Project key={projects.id} className='project'>
@@ -24,12 +34,12 @@ export default function ProjectsContent() {
                 <CodeAndDeploy className='divHover'>
 
                     {projects.codeAndDeploy.deploy.length == 0 ?
-                        <ItemHover className='itemHover' style={{ backgroundColor: "#0D0D0D", height: "100%", borderRadius: "0 6rem 6rem 0" }}>
+                        <ItemHover className='itemHover' style={itemHoverStyleMapFirstCondition}>
                             <a href={projects.codeAndDeploy.code} target="_blank"><img className="githubLogo" style={{ width: "5rem" }} src={githubLogo} /></a>
                         </ItemHover> :
 
                         <>
-                            <ItemHover className='itemHover' style={{ height: "50%", backgroundColor: "#0D0D0D", borderRadius: "0 6rem 0 0" }}>
+                            <ItemHover className='itemHover' style={itemHoverStyleMapLastCondition}>
                                 <a href={projects.codeAndDeploy.code} target="_blank" style={{}}>
                                     <img className="githubLogo" style={{ width: "5rem" }} src={githubLogo} />
                                 </a>
