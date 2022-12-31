@@ -10,8 +10,9 @@ export const Content = styled.div`
     align-items: center;
     padding-bottom: 3rem;
     h1{
-    font-size: 3rem;
-    font-family: var(--fontFamily-Sora);
+        font-size: 3.5rem;
+        font-family: var(--fontFamily-Sora);
+        color: var(--projects-color-ballons);
     }
 `;
 
@@ -55,8 +56,10 @@ export const ContentProject = styled.div`
     justify-content: space-between;
     align-items: center;
     height: 90%;
+    font-weight: 400;
     & h2{
         font-size: 3.5rem;
+        font-family: var(--fontFamily-Sora);
         color:var(--projects-color-ballons);
     }
     & ul {
@@ -72,13 +75,15 @@ export const ContentProject = styled.div`
     
     }
     #sinopseLong{
-        width: 60rem;
+        width: 80rem;
         font-size: 2rem;
         color:var(--projects-color-ballons);
         text-align: center;
+        font-family: var(--fontFamily-PtSans);
     }
     #legendShort{
-        font-size: 2.2rem;
+        font-size: 2.5rem;
+      font-family: var(--fontFamily-Sora);
 
     }
 @media (max-width:1250px) {
