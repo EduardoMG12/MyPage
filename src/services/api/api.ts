@@ -1,5 +1,3 @@
-
-
 interface IProjects {
     "id": string,
     "tittle": string,
@@ -50,7 +48,7 @@ const projects: Record<string, IProjects[]> =
         }
     },
     {
-        "id": "2",
+        "id": "a78d78128",
         "tittle": "Landing Page",
         "image": "projectsImages/landingPage.png",
         "sinopseShort": "landing page com uma breve historia sobre eu e aprensetaçao",
@@ -77,7 +75,36 @@ const projects: Record<string, IProjects[]> =
     ],
     "JavaScript": [{
 
-        "id": "3",
+
+
+        "id": "347892738yazwe4",
+        "tittle": "Busca de perfis do github por api",
+        "image": "projectsImages/fetchGitHubApi.png",
+        "sinopseShort": "Página que puxa o github de usúarios pela a api ",
+        "sinopseLong": "Uma página completamente responsiva com um input para puxar nick-names de usuários do github, este projeto foi feito vizando a organização e a separação de arquivos interface telas entre outras coisas para o código ficar mais limpo. ",
+        "iconTecnologics": {
+            "JavaScript": {
+                "class": "fa-brands fa-js",
+                "color": "#EAD41C"
+            },
+            "HTML": {
+                "class": "fa-brands fa-html5",
+                "color": "#E56027"
+            },
+            "CSS": {
+                "class": "fa-brands fa-css3-alt",
+                "color": "#2C9FD8"
+            },
+
+        },
+        "codeAndDeploy": {
+            "code": "https://github.com/EduardoMG12/getProfileGithub",
+            "deploy": "https://get-profile-github.vercel.app"
+        }
+
+    },
+    {
+        "id": "347892738y4",
         "tittle": "Timer",
         "image": "projectsImages/timer.png",
         "sinopseShort": "Cronômetro funcional",
@@ -104,7 +131,7 @@ const projects: Record<string, IProjects[]> =
 
     },
     {
-        "id": "4",
+        "id": "12378916045",
         "tittle": "To-do List",
         "image": "projectsImages/toDoList.png",
         "sinopseShort": "Uma lista de a fazeres que guarda dados em LocalStorage",
@@ -129,7 +156,7 @@ const projects: Record<string, IProjects[]> =
         }
     },
     {
-        "id": "5",
+        "id": "12874781745",
         "tittle": "Calculadora",
         "image": "projectsImages/calculator.png",
         "sinopseShort": "Calculadora feita em js com factory function",

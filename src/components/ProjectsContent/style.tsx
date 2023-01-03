@@ -25,6 +25,10 @@ export const Project = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: 0.6s transform ease-in-out;
+     &:hover{
+        transform:scale(1.03)
+     }
      &:hover .divHover{
     pointer-events: all;
     visibility: visible;
