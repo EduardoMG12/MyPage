@@ -4,15 +4,6 @@ import projects from '../../services/api/api';
 import Carousel from 'react-elastic-carousel';
 import { Container, Content, Image } from './style';
 
-interface IProjects {
-    "id": number,
-    "tittle": string,
-    "image": string,
-    "sinopseShort": string,
-    "sinopseLong": string,
-    "iconTecnologics": Record<string, string>,
-
-};
 
 export default () => {
 
@@ -36,21 +27,27 @@ export default () => {
         };
     };
 
-    const projectsFavorites = projects.slice(0, 5)
+    const projectsFavorites = Object.entries(projects).slice(0, 5);
 
-    const projectsMap: any[] = projectsFavorites.map((projects) => {
-        return (
-            <Container key={projects.id}>
-                <Image style={{ backgroundImage: `url(${projects.image ? projects.image : 'https://images.unsplash.com/photo-1572177812156-58036aae439c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'})` }} />
-                <Content>
-                    <h2 className='tittleContent'>{projects.tittle}</h2>
-                    <p className='legendShort'>Principais Ferramentas</p>
-                    <ul className='toolsProjects'>
-                        {Object.values(projects.iconTecnologics).map((tecnologic, i) => <li key={i} style={{ backgroundImage: `url(${tecnologic})` }}></li>)}
-                    </ul>
-                </Content>
-            </Container>
-        )
+    const projectsMap: any[] = projectsFavorites.map(([tittle, projects]) => {
+        return <>
+            <h1>{tittle}</h1>
+            {projects.map((projects) => {
+                return (
+                    <Container key={projects.id}>
+                        <Image style={{ backgroundImage: `url(${projects.image ? projects.image : 'https://images.unsplash.com/photo-1572177812156-58036aae439c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'})` }} />
+                        <Content>
+                            <h2 className='tittleContent'>{projects.tittle}</h2>
+                            <p className='legendShort'>Principais Ferramentas</p>
+                            <ul className='toolsProjects'>
+                                {Object.values(projects.iconTecnologics).map((tecnologic, i) => <li key={i}><i className={tecnologic.class} style={{ fontSize: "3.5rem", color: tecnologic.color }}></i></li>)}
+                            </ul>
+                        </Content>
+                    </Container>
+                )
+            })}
+        </>
+
     })
     return (
         //@ts-ignore

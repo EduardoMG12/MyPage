@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { ButtonTheme } from './style'
 
 export default function index() {
-    const [storedTheme, setStoredTheme] = useState(String);
-
     useEffect(() => {
         const storedValue = localStorage.getItem('storedTheme');
         if (storedValue) {

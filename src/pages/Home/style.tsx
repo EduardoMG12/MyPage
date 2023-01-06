@@ -142,6 +142,8 @@ export const ProjectsContainer = styled.div`
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin: 0 auto;
+        text-align: center;
         margin-bottom: 6rem;
         & h2{
             color: var(--pages-color);

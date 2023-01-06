@@ -1,6 +1,7 @@
 import Hamburguer from '../Hamburguer'
 import { ContainerHeader, Header, IconLogo, Items, List, Logo, NameLogo, Navegation, } from '../Header/styled'
 import ButtonTheme from '../SunAndMoon'
+import { Link } from 'react-router-dom'
 
 export default function () {
 
@@ -10,8 +11,8 @@ export default function () {
                 <ContainerHeader>
                     <Logo>
                         <NameLogo>
-                            <h2 className='firstNameLogo'>Charles </h2>
-                            <h2 className='lastNameLogo'>Eduardo</h2>
+                            <Link to="/"><h2 className='firstNameLogo'>Charles </h2></Link>
+                            <Link to="/"><h2 className='lastNameLogo'>Eduardo</h2></Link>
                         </NameLogo>
                         <IconLogo>
                             <h2>!=</h2>
