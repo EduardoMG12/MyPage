@@ -3,7 +3,7 @@ import { BallonAbout, Container, HeroSection, HomeAbout, MyImg, ProjectsContaine
 import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
-import Carousel from '../../components/Carousel'
+import Carousel from '../../components/Carousel/CCarousel'
 import { Link } from 'react-router-dom';
 
 gsap.registerPlugin(ScrollTrigger);
