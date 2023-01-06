@@ -100,7 +100,6 @@ export default function home() {
                     <h2>Alguns Projetos</h2>
                     <p>para mais <Link to="/MyProjects">projetos</Link></p>
                 </div>
-                <Carousel />
             </ProjectsContainer>
 
         </Container>
