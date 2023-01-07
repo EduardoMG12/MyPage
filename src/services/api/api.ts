@@ -1,14 +1,30 @@
-interface IProjects {
-    "id": string,
-    "tittle": string,
-    "image": string,
-    "sinopseShort": string,
-    "sinopseLong": string,
-    "iconTecnologics": Record<string, { class: string, color: string }>,
-    "codeAndDeploy": Record<string, string>
-};
+export type IconTecnologyType = {
+    class: string,
+    color: string
+}
 
-const projects: Record<string, IProjects[]> =
+export type CodeDeployType = {
+    code: string
+    deploy: string
+}
+
+export interface IProjects {
+    id: string,
+    tittle: string,
+    image: string,
+    sinopseShort: string,
+    sinopseLong: string,
+    iconTecnologics: {
+        [tecnology: string]: IconTecnologyType
+    },
+    codeAndDeploy: CodeDeployType
+}
+
+export type ProjectsType = {
+    [project: string]: IProjects[]
+}
+
+const projects: ProjectsType =
 {
     "Projetos": [{
         "id": "1",
