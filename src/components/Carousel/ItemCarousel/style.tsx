@@ -2,10 +2,9 @@ import styled from "styled-components";
 
 export const CardItemCarousel = styled.div`
     height: 75rem;
-    min-width:20rem;
-    max-width: 63rem;
     border-radius: 4rem;
     text-align: center;
+    flex-shrink: 0;
     .content{
 
     }
@@ -19,12 +18,11 @@ export const CardItemCarousel = styled.div`
 
     }
 
-
 `;
 
 export const Image = styled.div`
-    min-width:63rem;
-    height: 40rem;
+    min-width:100%;
+    height: 50%;
     border-radius: 4rem 4rem 1rem 1rem;
     background-position: center;
     background-size: cover;
