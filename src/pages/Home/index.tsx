@@ -3,8 +3,9 @@ import { BallonAbout, Container, HeroSection, HomeAbout, MyImg, ProjectsContaine
 import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
-import Carousel from '../../components/Carousel/CCarousel'
 import { Link } from 'react-router-dom';
+import ICarousel from '../../components/Carousel/ItemCarousel'
+import CCarousel from '../../components/Carousel/ContainerCarousel'
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(ScrollToPlugin);
@@ -96,12 +97,12 @@ export default function home() {
             </HomeAbout>
 
             <ProjectsContainer>
-                <div className="tittle">
-                    <h2>Alguns Projetos</h2>
-                    <p>para mais <Link to="/MyProjects">projetos</Link></p>
-                </div>
+                <h2>Alguns Projetos</h2>
+                <p>para mais <Link to="/MyProjects">projetos</Link></p>
+                <CCarousel bgColor='red'>
+                    <ICarousel bgColor='blue' />
+                </CCarousel>
             </ProjectsContainer>
-
         </Container>
     )
 }

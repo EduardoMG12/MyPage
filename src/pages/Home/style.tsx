@@ -132,33 +132,25 @@ export const BallonAbout = styled.div`
 
 `;
 export const ProjectsContainer = styled.div`
+height: 180vh;
     width: 100%;
-    height: 200vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    .tittle{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0 auto;
-        text-align: center;
-        margin-bottom: 6rem;
-        & h2{
-            color: var(--pages-color);
-            font-family: var(--fontFamily-Sora);
-            font-weight: 400;
-            font-size: 5.5rem;
-        }
-        & p{
-            color: var(--pages-color);
-            font-size: 2rem;
-            & a{
-                color: #003060;
-            
-            }
+    margin: 0 auto;
+    & h2{
+        color: var(--pages-color);
+        font-family: var(--fontFamily-Sora);
+        font-weight: 400;
+        font-size: 5.5rem;
+    }
+    & p{
+        color: var(--pages-color);
+        font-size: 2rem;
+        & a{
+            color: #003060;
+        
         }
     }
-    
     `;
