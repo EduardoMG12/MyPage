@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const CardItemCarousel = styled.div`
     height: 80vh;
-    width: 20%;
+    width: 20vw;
     .content{
 
     }

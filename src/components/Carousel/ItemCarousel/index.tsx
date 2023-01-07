@@ -8,8 +8,8 @@ type TICarousel = {
 
 const ICarousel: React.FC<TICarousel> = ({ bgColor }) => {
 
-    const projectsMap: Object = () => api.Projetos.map((projects: IProjects) => {
-        console.log(projects)
+    const projectsMap: any = api.Projetos.map((projects: IProjects) => {
+        console.log(projects, "slaaa")
         return (
             <CardItemCarousel style={{ backgroundColor: `${bgColor ?? ''}` }} key={projects.id}>
                 <Image />
@@ -19,8 +19,6 @@ const ICarousel: React.FC<TICarousel> = ({ bgColor }) => {
                     <ul className='toolsProjects'>
 
                     </ul>
-
-
                 </div>
             </CardItemCarousel>
         )
