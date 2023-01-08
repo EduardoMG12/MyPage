@@ -45,8 +45,8 @@ const CCarousel: React.FC<TCCarousel> = ({ maxWidth, height, bgColor, children }
     })
 
     return (
-        <ContainerCarousel style={{ maxWidth: `${maxWidth ?? '100%'}`, height: `${height ?? '100vh'}`, backgroundColor: `${bgColor ?? ''}` }}>
-            <div className='arrow left controls' style={{ height: `${height ?? '100vh'}` }}>
+        <ContainerCarousel style={{ maxWidth: `${maxWidth ?? '100%'}`, height: `${height ?? '70vh'}`, backgroundColor: `${bgColor ?? ''}` }}>
+            <div className='arrow left controls' style={{ height: `${height ?? '70vh'}` }}>
                 <div>
                     <i className="fa-solid fa-chevron-left"></i>
                 </div>
@@ -56,7 +56,7 @@ const CCarousel: React.FC<TCCarousel> = ({ maxWidth, height, bgColor, children }
                     {children}
                 </div>
             </div>
-            <div className='arrow right controls' style={{ height: `${height ?? '100vh'}` }}>
+            <div className='arrow right controls' style={{ height: `${height ?? '70vh'}` }}>
                 <div>
                     <i className="fa-solid fa-chevron-right"></i>
                 </div>

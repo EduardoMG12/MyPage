@@ -99,8 +99,8 @@ export default function home() {
             <ProjectsContainer>
                 <h2>Alguns Projetos</h2>
                 <p>para mais <Link to="/MyProjects">projetos</Link></p>
-                <CCarousel bgColor='red'>
-                    <ICarousel bgColor='blue' />
+                <CCarousel>
+                    <ICarousel bgColor='--projects-bgd-ballons' />
                 </CCarousel>
             </ProjectsContainer>
         </Container>

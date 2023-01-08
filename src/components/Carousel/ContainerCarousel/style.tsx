@@ -65,7 +65,7 @@ export const ContainerCarousel = styled.section`
     }
 
     & .carouselItem{
-     opacity: 0.1;
+     opacity: 0.5;
     }
     & .currentItem{
         opacity: 1;
