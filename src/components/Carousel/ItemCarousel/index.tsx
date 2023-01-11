@@ -15,6 +15,7 @@ const ICarousel: React.FC<IItemCarousel> = ({ bgColor, widthHeight }) => {
             <CardItemCarousel bgColor={bgColor} widthHeight={widthHeight}
                 key={projects.id}
                 className={api.JavaScript[0] === projects ? "carouselItem currentItem" : "carouselItem"}
+
             >
                 <Image bgImage={projects.image} />
                 <div className="content">
