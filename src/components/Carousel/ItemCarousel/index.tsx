@@ -2,19 +2,21 @@ import React from 'react'
 import { CardItemCarousel, Image } from './style'
 import api, { IProjects, ProjectsType } from '../../../services/api/api'
 
-type TICarousel = {
+export type IItemCarousel = {
     bgColor?: string,
-    widthHeight?: string
+    widthHeight?: string,
+    bgImage?: string,
 }
 
-const ICarousel: React.FC<TICarousel> = ({ bgColor, widthHeight }) => {
+const ICarousel: React.FC<IItemCarousel> = ({ bgColor, widthHeight }) => {
 
     const projectsMap: any = api.JavaScript.map((projects: IProjects) => {
         return (
-            <CardItemCarousel style={{ backgroundColor: `var(${bgColor ?? ''})`, width: `${widthHeight ?? '60rem'}`, height: `${widthHeight ?? '60rem'}` }} key={projects.id} className={api.JavaScript[0] === projects ? "carouselItem currentItem" : "carouselItem"}>
-                <Image style={{
-                    backgroundImage: `url(${projects.image.length > 1 ? projects.image : 'https //source.unsplash.com/random/300x300px?developer'})`
-                }} />
+            <CardItemCarousel bgColor={bgColor} widthHeight={widthHeight}
+                key={projects.id}
+                className={api.JavaScript[0] === projects ? "carouselItem currentItem" : "carouselItem"}
+            >
+                <Image bgImage={projects.image} />
                 <div className="content">
                     <h2 className='tittleContent'>{projects.tittle}</h2>
                     <p className='tittleTools'>Principais Ferramentas</p>
