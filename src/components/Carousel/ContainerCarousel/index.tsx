@@ -1,11 +1,20 @@
 import React, { Children, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { CarouselItem } from '../ItemCarousel';
 
 interface IContainerCarousel {
     children: React.ReactNode,
 }
 
-const Root: React.FC<IContainerCarousel> = ({children }) => {
+const Root: React.FC<IContainerCarousel> = ({ children }) => {
+    return (
+        <>
+            {children}
+        </>
+    )
+};
+    
+const Wrapper: React.FC<IContainerCarousel> = ({children }) => {
     return (
         <>
             {children}
@@ -14,8 +23,49 @@ const Root: React.FC<IContainerCarousel> = ({children }) => {
     
 };
 
+interface IContainerItems {
+    children: React.ReactElement<typeof CarouselItem>
+            
+};
+
+    
+const ContainerItems: React.FC<IContainerItems> = ({children}) => {
+    return (
+        <>
+            {children}
+        </>
+    )
+    
+};
+
+interface IArrow extends React.HTMLProps<HTMLElement>{
+    className: string
+}
+
+const ArrowLeft: React.FC<IArrow> = ({className}) => {
+    return (
+        <>
+            <i className={className}></i>
+        </>
+    )
+    
+};
+
+const ArrowRight: React.FC<IArrow> = ({className }) => {
+    return (
+        <>
+            <i className={className}></i>
+        </>
+    )
+    
+};
+
 export const ContainerCarousel = {
     Root,
+    Wrapper,
+    ContainerItems,
+    ArrowLeft,
+    ArrowRight
 
 };
 

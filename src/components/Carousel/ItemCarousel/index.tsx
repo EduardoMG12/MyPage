@@ -88,7 +88,7 @@ const URL: React.FC<ICarouselItemLink> = ({ children, LinkHref, ...props }) => {
     )
 }
 
-Root.displayName = 'CarouselItem.Root'
+Root.displayName = 'CarouselItem.RootItem'
 Root.displayName = 'CarouselItem.Image'
 Root.displayName = 'CarouselItem.Title'
 Root.displayName = 'CarouselItem.SubTitle'
@@ -98,7 +98,7 @@ Root.displayName = 'CarouselItem.ItemList'
 Root.displayName = 'CarouselItem.URL'
 
 
-export const Carousel = {
+export const CarouselItem = {
     Root,
     Image,
     Title,
