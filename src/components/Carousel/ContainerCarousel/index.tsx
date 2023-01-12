@@ -1,47 +1,50 @@
 import React, { Children, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ContainerCarousel } from './style';
 
-type TCCarousel = {
-    maxWidth?: string,
-    height?: string,
-    bgColor?: string,
+interface IContainerCarousel {
     children: React.ReactNode,
-
 }
 
-const CCarousel: React.FC<TCCarousel> = ({ maxWidth, height, bgColor, children }) => {
-
-    const [currentItem, setCurrentItem] = useState<number>(0)
-
-    const items = document.querySelectorAll('.carouselItem')
-    const maxItems = items.length
-    console.log(maxItems)
-    console.log(currentItem)
-
+const Root: React.FC<IContainerCarousel> = ({children }) => {
     return (
-        <ContainerCarousel style={{ maxWidth: `${maxWidth ?? '100%'}`, height: `${height ?? '70vh'}`, backgroundColor: `${bgColor ?? ''}` }}>
-            <div className='arrow left controls' style={{ height: `${height ?? '70vh'}` }} onClick={() => setCurrentItem(currentItem >= 0 ? currentItem - 1 : maxItems)}>
-                <div>
-                    <i className="fa-solid fa-chevron-left"></i>
-                </div>
-            </div>
-            <div className='containerCarouselContentWrapper'>
-                <div className="containerCarouselContent">
-                    {children}
-                </div>
-            </div>
-            <div className='arrow right controls' style={{ height: `${height ?? '70vh'}` }} onClick={() => setCurrentItem(currentItem < maxItems ? currentItem + 1 : 0)}>
-                <div>
-                    <i className="fa-solid fa-chevron-right"></i>
-                </div>
-            </div>
-        </ContainerCarousel >
+        <>
+            {children}
+        </>
     )
+    
 };
 
-export default CCarousel;
+export const ContainerCarousel = {
+    Root,
 
+};
+
+
+    // const [currentItem, setCurrentItem] = useState<number>(0)
+
+    // const items = document.querySelectorAll('.carouselItem')
+    // const maxItems = items.length
+    // console.log(maxItems)
+    // console.log(currentItem)
+
+    // return (
+    //     <ContainerCarousel style={{ maxWidth: `${maxWidth ?? '100%'}`, height: `${height ?? '70vh'}`, backgroundColor: `${bgColor ?? ''}` }}>
+    //         <div className='arrow left controls' style={{ height: `${height ?? '70vh'}` }} onClick={() => setCurrentItem(currentItem >= 0 ? currentItem - 1 : maxItems)}>
+    //             <div>
+    //                 <i className="fa-solid fa-chevron-left"></i>
+    //             </div>
+    //         </div>
+    //         <div className='containerCarouselContentWrapper'>
+    //             <div className="containerCarouselContent">
+    //                 {children}
+    //             </div>
+    //         </div>
+    //         <div className='arrow right controls' style={{ height: `${height ?? '70vh'}` }} onClick={() => setCurrentItem(currentItem < maxItems ? currentItem + 1 : 0)}>
+    //             <div>
+    //                 <i className="fa-solid fa-chevron-right"></i>
+    //             </div>
+    //         </div>
+    //     </ContainerCarousel > 
 
 //  controls.forEach(control => {
 //         control.addEventListener('click', () => {

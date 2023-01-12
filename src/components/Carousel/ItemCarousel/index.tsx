@@ -1,38 +1,110 @@
-import React from 'react'
-import { CardItemCarousel, Image } from './style'
-import api, { IProjects, ProjectsType } from '../../../services/api/api'
+import React, { HTMLAttributes, ReactNode } from 'react'
+import { Link } from 'react-router-dom'
 
-export type IItemCarousel = {
-    bgColor?: string,
-    widthHeight?: string,
-    bgImage?: string,
+interface ICarouselItem {
+    children: ReactNode
 }
 
-const ICarousel: React.FC<IItemCarousel> = ({ bgColor, widthHeight }) => {
-
-    const projectsMap: any = api.JavaScript.map((projects: IProjects) => {
-        return (
-            <CardItemCarousel bgColor={bgColor} widthHeight={widthHeight}
-                key={projects.id}
-                className={api.JavaScript[0] === projects ? "carouselItem currentItem" : "carouselItem"}
-
-            >
-                <Image bgImage={projects.image} />
-                <div className="content">
-                    <h2 className='tittleContent'>{projects.tittle}</h2>
-                    <p className='tittleTools'>Principais Ferramentas</p>
-                    <ul className='toolsProjects'>
-
-                    </ul>
-                </div>
-            </CardItemCarousel>
-        )
-    })
+const Root: React.FC<ICarouselItem> = ({ children }) => {
     return (
         <>
-            {projectsMap}
+            {children}
         </>
     )
 }
 
-export default ICarousel;
+interface ICarouselItemImage {
+    imgHref: string,
+    imgAlt: string,
+}
+
+const Image: React.FC<ICarouselItemImage> = ({ imgHref, imgAlt }) => {
+    return (
+        <>
+            <img src={imgHref} alt={imgAlt} />
+        </>
+    )
+}
+
+interface ICarouselContentText {
+    children: ReactNode
+}
+
+const Title: React.FC<ICarouselContentText> = ({ children }) => {
+    return (
+        <>
+            <h2>{children}</h2>
+        </>
+    )
+}
+
+const SubTitle: React.FC<ICarouselContentText> = ({ children }) => {
+    return (
+        <h3>{children}</h3>
+    )
+}
+
+const Description: React.FC<ICarouselContentText> = ({ children }) => {
+    return (
+        <p>{children}</p>
+    )
+}
+
+interface ICarouselItemList extends React.HTMLProps<HTMLUListElement> {
+    children: React.ReactElement<typeof ItemList>
+}
+
+
+const List: React.FC<ICarouselItemList> = ({ children }) => {
+    return (
+        <ul>
+            {children}
+        </ul>
+    )
+}
+
+const ItemList: React.FC<ICarouselContentText> = ({ children }) => {
+    return (
+        <li>
+            {children}
+        </li>
+    )
+}
+
+interface ICarouselItemLink extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
+    children: ReactNode,
+    LinkHref: string
+
+}
+
+
+const URL: React.FC<ICarouselItemLink> = ({ children, LinkHref, ...props }) => {
+    return (
+        <>
+            <Link to={LinkHref} >
+                {children}
+            </Link>
+        </>
+    )
+}
+
+Root.displayName = 'CarouselItem.Root'
+Root.displayName = 'CarouselItem.Image'
+Root.displayName = 'CarouselItem.Title'
+Root.displayName = 'CarouselItem.SubTitle'
+Root.displayName = 'CarouselItem.Description'
+Root.displayName = 'CarouselItem.List'
+Root.displayName = 'CarouselItem.ItemList'
+Root.displayName = 'CarouselItem.URL'
+
+
+export const Carousel = {
+    Root,
+    Image,
+    Title,
+    SubTitle,
+    Description,
+    List,
+    ItemList,
+    URL
+}
