@@ -26,12 +26,12 @@ export default function ProjectsContent() {
                     <Project key={projects.id} className='project'>
                         <Image style={{ backgroundImage: `url(${projects.image ? projects.image : 'https://images.unsplash.com/photo-1572177812156-58036aae439c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'})` }} />
                         <ContentProject>
-                            <h2 className='tittleContent'>{projects.tittle}</h2>
-                            <p id='sinopseLong'>{projects.sinopseLong}</p>
+                            <h2 className='tittleContent'>{projects.title}</h2>
+                            <p id='sinopseLong'>{projects.descriptionLong}</p>
                             <p id='legendShort'>Principais Ferramentas</p>
 
                             <ul className='toolsProjects'>
-                                {Object.values(projects.iconTecnologics).map((tecnologic, i) => <li key={i} ><i style={{ fontSize: "5rem", color: tecnologic.color }} className={tecnologic.class}></i></li>)}
+                                {Object.values(projects.iconTecnologics).map((tecnologic, i) => <li key={i} ><i style={{ fontSize: "5rem", color: tecnologic.color }} className={tecnologic.className}></i></li>)}
                             </ul>
                         </ContentProject>
                         <CodeAndDeploy className='divHover'>
