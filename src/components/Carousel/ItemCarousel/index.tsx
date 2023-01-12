@@ -78,7 +78,7 @@ interface ICarouselItemLink extends React.AnchorHTMLAttributes<HTMLAnchorElement
 }
 
 
-const URL: React.FC<ICarouselItemLink> = ({ children, LinkHref, ...props }) => {
+const LinkComponent: React.FC<ICarouselItemLink> = ({ children, LinkHref, ...props }) => {
     return (
         <>
             <Link to={LinkHref} >
@@ -95,7 +95,7 @@ Root.displayName = 'CarouselItem.SubTitle'
 Root.displayName = 'CarouselItem.Description'
 Root.displayName = 'CarouselItem.List'
 Root.displayName = 'CarouselItem.ItemList'
-Root.displayName = 'CarouselItem.URL'
+Root.displayName = 'CarouselItem.Link'
 
 
 export const CarouselItem = {
@@ -106,5 +106,5 @@ export const CarouselItem = {
     Description,
     List,
     ItemList,
-    URL
+    Link: LinkComponent
 }

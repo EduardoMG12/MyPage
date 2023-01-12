@@ -103,7 +103,7 @@ export default function home() {
                 <ContainerCarousel.ArrowLeft className="fa-solid fa-chevron-left" />
                 <ContainerCarousel.Wrapper>
                     <ContainerCarousel.ContainerItems>
-                        {MapCarousel.Root()}
+                        <MapCarousel.Root />
                     </ContainerCarousel.ContainerItems>
                 </ContainerCarousel.Wrapper>
                 <ContainerCarousel.ArrowRight className="fa-solid fa-chevron-right" />

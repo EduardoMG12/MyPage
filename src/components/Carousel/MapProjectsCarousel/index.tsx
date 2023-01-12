@@ -4,16 +4,13 @@ import api from '../../../services/api/api'
 import projects from '../../../services/api/api'
 import { ContainerStyle } from './style'
 
-interface IMapCarousel extends React.Component<typeof CarouselItem> {
-}
-
-const Root: React.FC<IMapCarousel> = () => {
+const Root: React.FC = () => {
     console.log(api)
     const carouselMap: any[] = Object.entries(projects).map(([tittle, projects]) => {
         return projects.map((projects) => {
             console.log(projects.iconTecnologics)
             return <>
-                <CarouselItem.URL LinkHref={projects.codeAndDeploy.code}>
+                <CarouselItem.Link LinkHref={projects.codeAndDeploy.code}>
                     <CarouselItem.Root>
                         <CarouselItem.Image imgHref={projects.image} imgAlt={projects.image} />
                         <CarouselItem.Title children={projects.title} />
@@ -30,7 +27,7 @@ const Root: React.FC<IMapCarousel> = () => {
                             </>
                         </CarouselItem.List>
                     </CarouselItem.Root>
-                </CarouselItem.URL>
+                </CarouselItem.Link>
 
             </>;
         }
