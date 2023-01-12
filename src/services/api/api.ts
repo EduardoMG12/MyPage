@@ -8,11 +8,12 @@ export interface IProjects {
     image: string,
     descriptionShort: string,
     descriptionLong: string,
-    iconTecnologics: [IconTecnologyType],
+    iconTecnologics: IconTecnologyType[],
     codeAndDeploy: CodeDeployType
 }
 
 export type IconTecnologyType = {
+    accessibility: string,
     className: string,
     color: string
 }
@@ -35,26 +36,32 @@ const projects: ProjectsType =
         "iconTecnologics": [
             {
 
+                "accessibility": "JavaScript icon",
                 "className": "fa-brands fa-js",
                 "color": "#EAD41C"
             },
             {
+                "accessibility": "TypeScript icon",
                 "className": "devicon-typescript-plain",
                 "color": "#2C9FD8"
             },
             {
+                "accessibility": "NextJs icon",
                 "className": "devicon-nextjs-original",
                 "color": "black"
             },
             {
+                "accessibility": "React icon",
                 "className": "fa-brands fa-react",
                 "color": "#2C9FD8"
             },
             {
+                "accessibility": "Node.js icon",
                 "className": "fa-brands fa-node-js",
                 "color": "orange"
             },
             {
+                "accessibility": "MongoDb icon",
                 "className": "devicon-mongodb-plain",
                 "color": "green"
             }
@@ -70,20 +77,23 @@ const projects: ProjectsType =
         "image": "projectsImages/landingPage.png",
         "descriptionShort": "landing page com uma breve historia sobre eu e aprensetaçao",
         "descriptionLong": "Um projeto que fiz com o objetivo de treinar/testar meus conhecimentos de html css e js, um projeto simples porem funcional, que tem como premissa ser uma página contando um pouco da minha hístoria e me apresentando, mostrando minhas midias profissionais.",
-        "iconTecnologics": {
-            "JavaScript": {
+        "iconTecnologics": [
+            {
+                "accessibility": "JavaScript",
                 "className": "fa-brands fa-js",
                 "color": "#EAD41C"
             },
-            "HTML": {
+            {
+                "accessibility": "HTML",
                 "className": "fa-brands fa-html5",
                 "color": "#E56027"
             },
-            "CSS": {
+            {
+                "accessibility": "CSS",
                 "className": "fa-brands fa-css3-alt",
                 "color": "#2C9FD8"
             },
-        },
+        ],
         "codeAndDeploy": {
             "code": "https://github.com/EduardoMG12/landing-page-basic-all-black",
             "deploy": "https://landing-page-basic-all-black-3beceh95r-eduardomg12.vercel.app"
@@ -99,21 +109,24 @@ const projects: ProjectsType =
         "image": "projectsImages/fetchGitHubApi.png",
         "descriptionShort": "Página que puxa o github de usúarios pela a api ",
         "descriptionLong": "Uma página completamente responsiva com um input para puxar nick-names de usuários do github, este projeto foi feito vizando a organização e a separação de arquivos interface telas entre outras coisas para o código ficar mais limpo. ",
-        "iconTecnologics": {
-            "JavaScript": {
+        "iconTecnologics": [
+            {
+                "accessibility": "JavaScript",
                 "className": "fa-brands fa-js",
                 "color": "#EAD41C"
             },
-            "HTML": {
+            {
+                "accessibility": "HTML",
                 "className": "fa-brands fa-html5",
                 "color": "#E56027"
             },
-            "CSS": {
+            {
+                "accessibility": "CSS",
                 "className": "fa-brands fa-css3-alt",
                 "color": "#2C9FD8"
             },
 
-        },
+        ],
         "codeAndDeploy": {
             "code": "https://github.com/EduardoMG12/getProfileGithub",
             "deploy": "https://get-profile-github.vercel.app"
@@ -126,21 +139,24 @@ const projects: ProjectsType =
         "image": "projectsImages/timer.png",
         "descriptionShort": "Cronômetro funcional",
         "descriptionLong": "Um projeto simples porem funcional de um timer com três botões, reset para zerar o timer, pause para parar e init para começar a contar ou continuar, o projeto sendo funcional e responsivo.",
-        "iconTecnologics": {
-            "JavaScript": {
+        "iconTecnologics": [
+            {
+                "accessibility": "JavaScript",
                 "className": "fa-brands fa-js",
                 "color": "#EAD41C"
             },
-            "HTML": {
+            {
+                "accessibility": "HTML",
                 "className": "fa-brands fa-html5",
                 "color": "#E56027"
             },
-            "CSS": {
+            {
+                "accessibility": "CSS",
                 "className": "fa-brands fa-css3-alt",
                 "color": "#2C9FD8"
             },
 
-        },
+        ],
         "codeAndDeploy": {
             "code": "",
             "deploy": ""
@@ -153,20 +169,23 @@ const projects: ProjectsType =
         "image": "projectsImages/toDoList.png",
         "descriptionShort": "Uma lista de a fazeres que guarda dados em LocalStorage",
         "descriptionLong": "O projeto ajuda a organizar as ideias o objetivo é ser uma lista de a fazeres aonde você mesmo consegue colocar e deletar itens, a mesma tem a função de deletar os a fazeres apertando no botão e de adicionar apertando no botão ou apertando enter. A página é completamente responsivel.",
-        "iconTecnologics": {
-            "JavaScript": {
+        "iconTecnologics": [
+            {
+                "accessibility": "JavaScript",
                 "className": "fa-brands fa-js",
                 "color": "#EAD41C"
             },
-            "HTML": {
+            {
+                "accessibility": "HTML",
                 "className": "fa-brands fa-html5",
                 "color": "#E56027"
             },
-            "CSS": {
+            {
+                "accessibility": "CSS",
                 "className": "fa-brands fa-css3-alt",
                 "color": "#2C9FD8"
             },
-        },
+        ],
         "codeAndDeploy": {
             "code": "https://github.com/EduardoMG12/to-do-list",
             "deploy": "https://to-do-list-q2mht4ni7-eduardomg12.vercel.app"
@@ -178,20 +197,24 @@ const projects: ProjectsType =
         "image": "projectsImages/calculator.png",
         "descriptionShort": "Calculadora feita em js com factory function",
         "descriptionLong": "Um exercicio de um curso que fiz, que é um projeto feito em facroty function, fiz quando estava pegando a base do js o mesmo foi feito primeiramente em constructor function e depois refatorado para factory function, fiz uns updates da calculadora que não estava no projeto final, que foi a responsividade, o led em cima da calculadora o som que a calculadora faz e o aviso de erro.",
-        "iconTecnologics": {
-            "JavaScript": {
+        "iconTecnologics": [
+            {
+                "accessibility": "JavaScript",
                 "className": "fa-brands fa-js",
                 "color": "#EAD41C"
             },
-            "HTML": {
+            {
+                "accessibility": "HTML",
                 "className": "fa-brands fa-html5",
                 "color": "#E56027"
             },
-            "CSS": {
+            {
+
+                "accessibility": "CSS",
                 "className": "fa-brands fa-css3-alt",
                 "color": "#2C9FD8"
             },
-        },
+        ],
         "codeAndDeploy": {
             "code": "https://github.com/EduardoMG12/calculator-constructor-function",
             "deploy": "https://calculator-constructor-function-charles-eduardo-97rkm37x4.vercel.app"
