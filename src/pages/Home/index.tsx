@@ -99,16 +99,16 @@ export default function home() {
 
 
 
+
             <ContainerCarousel.Root>
-                <ContainerCarousel.ArrowLeft className="fa-solid fa-chevron-left" />
+                <ContainerCarousel.ArrowLeft className="fa-solid fa-chevron-left" color='var(--pages-color)' />
                 <ContainerCarousel.Wrapper>
                     <ContainerCarousel.ContainerItems>
                         <MapCarousel.Root />
                     </ContainerCarousel.ContainerItems>
                 </ContainerCarousel.Wrapper>
-                <ContainerCarousel.ArrowRight className="fa-solid fa-chevron-right" />
+                <ContainerCarousel.ArrowRight className="fa-solid fa-chevron-right" color='var(--pages-color)' />
             </ContainerCarousel.Root>
-
         </Container>
     )
 }
