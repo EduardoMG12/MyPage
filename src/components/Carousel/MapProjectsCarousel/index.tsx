@@ -13,19 +13,21 @@ const Root: React.FC = () => {
                 <CarouselItem.Link LinkHref={projects.codeAndDeploy.code}>
                     <CarouselItem.Root>
                         <CarouselItem.Image imgHref={projects.image} imgAlt={projects.image} />
-                        <CarouselItem.Title children={projects.title} />
-                        <CarouselItem.Description children={projects.descriptionShort} />
-                        <CarouselItem.List >
-                            <>
-                                {projects.iconTecnologics.map((item, index) => {
-                                    return (
-                                        <CarouselItem.ItemList key={index}>
-                                            <i className={item.className} color={item.color}></i>
-                                        </CarouselItem.ItemList>
-                                    );
-                                })}
-                            </>
-                        </CarouselItem.List>
+                        <div>
+                            <CarouselItem.Title children={projects.title} />
+                            <CarouselItem.Description children={projects.descriptionShort} />
+                            <CarouselItem.List >
+                                <>
+                                    {projects.iconTecnologics.map((item, index) => {
+                                        return (
+                                            <CarouselItem.ItemList key={index}>
+                                                <i className={item.className} color={item.color}></i>
+                                            </CarouselItem.ItemList>
+                                        );
+                                    })}
+                                </>
+                            </CarouselItem.List>
+                        </div>
                     </CarouselItem.Root>
                 </CarouselItem.Link>
 

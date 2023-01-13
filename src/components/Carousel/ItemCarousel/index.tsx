@@ -81,9 +81,9 @@ interface ICarouselItemLink extends React.AnchorHTMLAttributes<HTMLAnchorElement
 const LinkComponent: React.FC<ICarouselItemLink> = ({ children, LinkHref, ...props }) => {
     return (
         <>
-            <Link to={LinkHref} >
+            <a href={LinkHref} target="_blank">
                 {children}
-            </Link>
+            </a>
         </>
     )
 }
