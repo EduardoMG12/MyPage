@@ -3,6 +3,7 @@ import { CarouselItem } from '../ItemCarousel'
 import api from '../../../services/api/api'
 import projects from '../../../services/api/api'
 import { ContainerStyle } from './style'
+import { ContainerCarousel } from '../ContainerCarousel'
 
 const Root: React.FC = () => {
     console.log(api)
@@ -36,9 +37,17 @@ const Root: React.FC = () => {
         )
     })
     return (
-        <ContainerStyle>
-            {carouselMap}
-        </ContainerStyle>
+        <ContainerCarousel.Root>
+            <ContainerCarousel.ArrowLeft className="fa-solid fa-chevron-left" color='var(--pages-color)' />
+            <ContainerCarousel.Wrapper>
+                <ContainerCarousel.ContainerItems>
+                    <ContainerStyle>
+                        {carouselMap}
+                    </ContainerStyle>
+                </ContainerCarousel.ContainerItems>
+            </ContainerCarousel.Wrapper>
+            <ContainerCarousel.ArrowRight className="fa-solid fa-chevron-right" color='var(--pages-color)' />
+        </ContainerCarousel.Root>
     )
 }
 

@@ -18,10 +18,12 @@ export const ContainerStyle = styled.section`
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    background-color: var(--projects-bgd-ballons);
+    border-radius: 4rem;
 
-    
     & img{
         width: 80rem;
+        border-radius: 4rem 4rem 0 0;
     }
     & div{
         height: 30rem;

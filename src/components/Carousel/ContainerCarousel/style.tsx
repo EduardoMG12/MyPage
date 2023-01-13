@@ -5,14 +5,12 @@ export const ContainerCarouselStyle = styled.section`
     align-items: center;
     margin: 0 auto;
     position: relative;
-    padding: 1.5rem;
+    padding: 2.5rem;
     height: 90vh;
     width: 100vw;
-    overflow-x: hidden;
 
 `;
 export const WrapperStyle = styled.div`	    
-    overflow-x: hidden;
 `;
 export const ContainerItemsStyle = styled.div`	    
     overflow-x: auto;
