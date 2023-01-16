@@ -98,7 +98,7 @@ Root.displayName = 'CarouselItem.ItemList'
 Root.displayName = 'CarouselItem.Link'
 
 
-export const CarouselItem = {
+export const Card = {
     Root,
     Image,
     Title,

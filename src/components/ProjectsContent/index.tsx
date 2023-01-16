@@ -5,6 +5,7 @@ import projects from '../../services/api/api';
 import githubLogo from '/githubLogo.svg';
 import vercelLogo from '/vercelLogo.svg';
 import vercelLogoText from '/vercelLogoText.svg'
+import { Card } from '../Card'
 
 export default function ProjectsContent() {
     const itemHoverStyleMapFirstCondition = {

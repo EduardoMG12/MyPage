@@ -1,44 +1,51 @@
-import React, { ReactNode } from 'react'
-import { CarouselItem } from '../ItemCarousel'
+import React, { ReactNode, useEffect, useRef, useState } from 'react'
+import { Card } from '../../Card'
 import api from '../../../services/api/api'
 import projects from '../../../services/api/api'
 import { ContainerStyle } from './style'
 import { ContainerCarousel } from '../ContainerCarousel'
 
 const Root: React.FC = () => {
-    console.log(api)
     const carouselMap: any[] = Object.entries(projects).map(([tittle, projects]) => {
         return projects.map((projects) => {
-            console.log(projects.iconTecnologics)
             return <>
-                <CarouselItem.Link LinkHref={projects.codeAndDeploy.code}>
-                    <CarouselItem.Root>
-                        <CarouselItem.Image imgHref={projects.image} imgAlt={projects.image} />
+                <Card.Link LinkHref={projects.codeAndDeploy.code} key={projects.id}>
+                    <Card.Root>
+                        <Card.Image imgHref={projects.image} imgAlt={projects.image} />
                         <div>
-                            <CarouselItem.Title children={projects.title} />
-                            <CarouselItem.Description children={projects.descriptionShort} />
-                            <CarouselItem.List >
+                            <Card.Title children={projects.title} />
+                            <Card.Description children={projects.descriptionShort} />
+                            <Card.List >
                                 <>
                                     {projects.iconTecnologics.map((item, index) => {
                                         return (
-                                            <CarouselItem.ItemList key={index}>
+                                            <Card.ItemList key={index}>
                                                 <i className={item.className} color={item.color}></i>
-                                            </CarouselItem.ItemList>
+                                            </Card.ItemList>
                                         );
                                     })}
                                 </>
-                            </CarouselItem.List>
+                            </Card.List>
                         </div>
-                    </CarouselItem.Root>
-                </CarouselItem.Link>
+                    </Card.Root>
+                </Card.Link>
 
             </>;
         }
         )
     })
+
+    const [currentItem, setCurrentItem] = useState<number>(0)
+
+    const maxItems = 5;
+    useEffect(() => {
+        console.log(currentItem)
+    }, [])
+
+
     return (
         <ContainerCarousel.Root>
-            <ContainerCarousel.ArrowLeft className="fa-solid fa-chevron-left" color='var(--pages-color)' />
+            <ContainerCarousel.ArrowLeft onClick={() => setCurrentItem(currentItem > 0 ? currentItem - 1 : maxItems)} className="fa-solid fa-chevron-left" color='var(--pages-color)' />
             <ContainerCarousel.Wrapper>
                 <ContainerCarousel.ContainerItems>
                     <ContainerStyle>
@@ -46,7 +53,7 @@ const Root: React.FC = () => {
                     </ContainerStyle>
                 </ContainerCarousel.ContainerItems>
             </ContainerCarousel.Wrapper>
-            <ContainerCarousel.ArrowRight className="fa-solid fa-chevron-right" color='var(--pages-color)' />
+            <ContainerCarousel.ArrowRight onClick={() => setCurrentItem(currentItem)} className="fa-solid fa-chevron-right" color='var(--pages-color)' />
         </ContainerCarousel.Root>
     )
 }

@@ -1,6 +1,6 @@
 import React, { Children, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { CarouselItem } from '../ItemCarousel';
+import { Card } from '../../Card';
 import { Arrow, ContainerCarouselStyle, ContainerItemsStyle, WrapperStyle } from './style';
 
 interface IContainerCarousel {
@@ -25,7 +25,7 @@ const Wrapper: React.FC<IContainerCarousel> = ({children }) => {
 };
 
 interface IContainerItems {
-    children: React.ReactElement<typeof CarouselItem>
+    children: React.ReactElement<typeof Card>
             
 };
 
@@ -46,7 +46,7 @@ interface IArrow extends React.HTMLProps<HTMLElement>{
 
 const ArrowLeft: React.FC<IArrow> = ({className, color}) => {
     return (
-        <Arrow style={{left: "0", background: `linear-gradient(to left, transparent 0%, black 200%)`}}>
+        <Arrow style={{left: "0", background: `linear-gradient(to left, transparent 0%, black 200%)`}} >
             <i className={className} style={{color: `${color ?? "white"}`}}></i>
         </Arrow>
     )
@@ -55,7 +55,7 @@ const ArrowLeft: React.FC<IArrow> = ({className, color}) => {
 
 const ArrowRight: React.FC<IArrow> = ({className, color }) => {
     return (
-        <Arrow style={{right: "0", background: `linear-gradient(to right, transparent 0%, black 200%)`}}>
+        <Arrow style={{ right: "0", background: `linear-gradient(to right, transparent 0%, black 200%)` }}>
             <i className={className} style={{ color: `${color ?? "white"}`}}></i>
         </Arrow>
     )
