@@ -7,12 +7,16 @@ export const Header = styled.header`
     left: 0;
     display: flex;
     z-index: 1000;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     height: 7.5rem;
     width: 100%;
     background-color: var(--header-background);
     border-bottom: 1px solid ${props => props.theme.black || props.theme.light};
+    @media (max-width: 900px) {
+         justify-content: center;
+    }
+
 `;
 
 export const ContainerHeader = styled.div`
@@ -22,8 +26,13 @@ export const ContainerHeader = styled.div`
     align-items: center;
     :hover .firstNameLogo {
         animation: light 5s ease-out 0.3s both;
-    }
 
+         
+    }
+    @media (max-width: 900px) {
+         justify-content: center;
+    }
+    
 `;
 
 export const Navegation = styled.nav`
@@ -118,7 +127,9 @@ export const List = styled.ul`
     gap: 5rem;
       
     @media (max-width: 900px) {
-    display:none;
+    display: none;
+    flex-direction: column;
+    align-items: center;
     }
     @media (max-width: 1600px) {
     gap: 3rem;
