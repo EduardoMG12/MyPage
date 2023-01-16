@@ -42,6 +42,7 @@ export const Content = styled.div`
         & .imageCard{
             height: 100%;
             width: 40%;
+            object-fit: cover;
             border-radius: 6rem 0 0 6rem;
             @media (max-width:1250px) {
                 width: 100%;
