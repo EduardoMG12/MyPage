@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Items } from '../Header/styled';
-import { CodeAndDeploy, Content, ContentProject, Image, ItemHover, ItemHover2, Project } from './style';
+import { Content, ItemHover } from './style';
 import projects from '../../services/api/api';
 import githubLogo from '/githubLogo.svg';
 import vercelLogo from '/vercelLogo.svg';
@@ -24,24 +24,25 @@ export default function ProjectsContent() {
             <h1>{tittle}</h1>
             {projects.map((projects) => {
                 return (
-                    <Project key={projects.id} className='project'>
-                        <Image style={{ backgroundImage: `url(${projects.image ? projects.image : 'https://images.unsplash.com/photo-1572177812156-58036aae439c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'})` }} />
-                        <ContentProject>
-                            <h2 className='tittleContent'>{projects.title}</h2>
-                            <p id='sinopseLong'>{projects.descriptionLong}</p>
-                            <p id='legendShort'>Principais Ferramentas</p>
+                    <Card.Root key={projects.id} className="project">
+                        <Card.Image className="imageCard" imgAlt={`${projects.image}`} imgHref={`${projects.image ? projects.image : 'https://images.unsplash.com/photo-1572177812156-58036aae439c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'}`} />
 
-                            <ul className='toolsProjects'>
+                        <div className='contentProject'>
+                            <Card.Title className='titleProject'>{projects.title}</Card.Title>
+                            <Card.Description className='sinopseLong' >{projects.descriptionLong}</Card.Description>
+                            <Card.Description className='titleLanguages' >Principais Ferramentas</Card.Description>
+
+                            <Card.List className='toolsProject'>
                                 {Object.values(projects.iconTecnologics).map((tecnologic, i) => <li key={i} ><i style={{ fontSize: "5rem", color: tecnologic.color }} className={tecnologic.className}></i></li>)}
-                            </ul>
-                        </ContentProject>
-                        <CodeAndDeploy className='divHover'>
+                            </Card.List>
+                        </div>
+                        <Card.ConditionalComponent className='conditionalComponent'>
 
                             {projects.codeAndDeploy.deploy.length == 0 ?
                                 <ItemHover className='itemHover' style={itemHoverStyleMapFirstCondition}>
                                     <a href={projects.codeAndDeploy.code} target="_blank"><img className="githubLogo" style={{ width: "5rem" }} src={githubLogo} /></a>
-                                </ItemHover> :
-
+                                </ItemHover>
+                                :
                                 <>
                                     <ItemHover className='itemHover' style={itemHoverStyleMapLastCondition}>
                                         <a href={projects.codeAndDeploy.code} target="_blank" style={{}}>
@@ -56,8 +57,8 @@ export default function ProjectsContent() {
                                     </ItemHover>
                                 </>
                             }
-                        </CodeAndDeploy>
-                    </Project>
+                        </Card.ConditionalComponent>
+                    </Card.Root>
                 )
             })}
         </>
