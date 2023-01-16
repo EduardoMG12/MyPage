@@ -1,71 +1,72 @@
 import React, { HTMLAttributes, ReactNode } from 'react'
 import { Link } from 'react-router-dom'
 
-interface ICarouselItem {
-    children: ReactNode
+interface ICarouselItem extends React.HTMLAttributes<HTMLElement> {
+    children: ReactNode,
 }
 
-const Root: React.FC<ICarouselItem> = ({ children }) => {
+const Root: React.FC<ICarouselItem> = ({ children, ...props }) => {
     return (
-        <>
+        <div {...props}>
             {children}
-        </>
+        </div>
     )
 }
 
-interface ICarouselItemImage {
+interface ICarouselItemImage extends React.HTMLAttributes<HTMLImageElement> {
     imgHref: string,
     imgAlt: string,
 }
 
-const Image: React.FC<ICarouselItemImage> = ({ imgHref, imgAlt }) => {
+const Image: React.FC<ICarouselItemImage> = ({ imgHref, imgAlt, ...props }) => {
     return (
         <>
-            <img src={imgHref} alt={imgAlt} />
+            <img {...props} src={imgHref} alt={imgAlt} />
         </>
     )
 }
 
-interface ICarouselContentText {
-    children: ReactNode
+interface ICarouselContentText extends HTMLAttributes<any> {
+    children: ReactNode,
+    id?: string
 }
 
-const Title: React.FC<ICarouselContentText> = ({ children }) => {
+const Title: React.FC<ICarouselContentText> = ({ children, ...props }) => {
     return (
         <>
-            <h2>{children}</h2>
+            <h2 {...props} >{children}</h2>
         </>
     )
 }
 
-const SubTitle: React.FC<ICarouselContentText> = ({ children }) => {
+const SubTitle: React.FC<ICarouselContentText> = ({ children, ...props }) => {
     return (
-        <h3>{children}</h3>
+        <h3 {...props} >{children}</h3>
     )
 }
 
-const Description: React.FC<ICarouselContentText> = ({ children }) => {
+const Description: React.FC<ICarouselContentText> = ({ children, ...props }) => {
     return (
-        <p>{children}</p>
+        <p {...props} >{children}</p>
     )
 }
 
 interface ICarouselItemList extends React.HTMLProps<HTMLUListElement> {
-    children: React.ReactElement<typeof ItemList>
+    children: ReactNode
 }
 
 
-const List: React.FC<ICarouselItemList> = ({ children }) => {
+const List: React.FC<ICarouselItemList> = ({ children, ...props }) => {
     return (
-        <ul>
+        <ul {...props} >
             {children}
         </ul>
     )
 }
 
-const ItemList: React.FC<ICarouselContentText> = ({ children }) => {
+const ItemList: React.FC<ICarouselContentText> = ({ children, ...props }) => {
     return (
-        <li>
+        <li {...props} >
             {children}
         </li>
     )
@@ -73,7 +74,7 @@ const ItemList: React.FC<ICarouselContentText> = ({ children }) => {
 
 interface ICarouselItemLink extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
     children: ReactNode,
-    LinkHref: string
+    LinkHref: string,
 
 }
 
@@ -81,21 +82,35 @@ interface ICarouselItemLink extends React.AnchorHTMLAttributes<HTMLAnchorElement
 const LinkComponent: React.FC<ICarouselItemLink> = ({ children, LinkHref, ...props }) => {
     return (
         <>
-            <a href={LinkHref} target="_blank">
+            <a {...props} href={LinkHref} target="_blank">
                 {children}
             </a>
         </>
     )
 }
 
-Root.displayName = 'CarouselItem.RootItem'
-Root.displayName = 'CarouselItem.Image'
-Root.displayName = 'CarouselItem.Title'
-Root.displayName = 'CarouselItem.SubTitle'
-Root.displayName = 'CarouselItem.Description'
-Root.displayName = 'CarouselItem.List'
-Root.displayName = 'CarouselItem.ItemList'
-Root.displayName = 'CarouselItem.Link'
+interface IConditionalComponent {
+    children: ReactNode,
+    className?: string
+}
+
+const ConditionalComponent: React.FC<IConditionalComponent> = ({ children, className, ...props }) => {
+    return (
+        <div className={className}>
+            {children}
+        </div>
+    )
+}
+
+Root.displayName = 'Card.RootItem'
+Root.displayName = 'Card.Image'
+Root.displayName = 'Card.Title'
+Root.displayName = 'Card.SubTitle'
+Root.displayName = 'Card.Description'
+Root.displayName = 'Card.List'
+Root.displayName = 'Card.ItemList'
+Root.displayName = 'Card.Link'
+Root.displayName = 'Card.ConditionalComponent'
 
 
 export const Card = {
@@ -106,5 +121,6 @@ export const Card = {
     Description,
     List,
     ItemList,
-    Link: LinkComponent
+    Link: LinkComponent,
+    ConditionalComponent
 }
