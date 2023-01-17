@@ -7,12 +7,16 @@ export const Header = styled.header`
     left: 0;
     display: flex;
     z-index: 1000;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     height: 7.5rem;
     width: 100%;
     background-color: var(--header-background);
     border-bottom: 1px solid ${props => props.theme.black || props.theme.light};
+    @media (max-width: 900px) {
+         justify-content: center;
+    }
+
 `;
 
 export const ContainerHeader = styled.div`
@@ -22,8 +26,13 @@ export const ContainerHeader = styled.div`
     align-items: center;
     :hover .firstNameLogo {
         animation: light 5s ease-out 0.3s both;
-    }
 
+         
+    }
+    @media (max-width: 900px) {
+         justify-content: center;
+    }
+    
 `;
 
 export const Navegation = styled.nav`
@@ -117,9 +126,6 @@ export const List = styled.ul`
     justify-content:center;
     gap: 5rem;
       
-    @media (max-width: 900px) {
-    display:none;
-    }
     @media (max-width: 1600px) {
     gap: 3rem;
     margin-right: 2rem
@@ -128,6 +134,12 @@ export const List = styled.ul`
     gap: 2rem;
     margin-right: 4rem
     }
+    @media (max-width: 900px) {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    }
+  
 `;
 
 export const Items = styled(Link)`
@@ -140,12 +152,17 @@ export const Items = styled(Link)`
         text-transform: capitalize;
         letter-spacing: 0.145em;
     }
-       &:hover,p:hover,ul:hover{
-            transition: 0.3s transform ease-in-out;
-            transition: 0.9s  letter-spacing ease-in-out;
-            transform: translateY(-0.5rem);
-            letter-spacing: 0.25rem;
+    &:hover,p:hover,ul:hover{
+        transition: 0.3s transform ease-in-out;
+        transition: 0.9s  letter-spacing ease-in-out;
+        transform: translateY(-0.5rem);
+        letter-spacing: 0.25rem;
+    }
+    @media (max-width: 425px) {
+        & p{
+            font-size: 1.6rem;
         }
+    }
  
 `;
 

@@ -1,12 +1,18 @@
 import React from 'react'
 import { Hamburguer } from './styled'
 
-export default function () {
+interface IHamburguer {
+    onClick: () => void
+}
+
+const hamburguer: React.FC<IHamburguer> = ({ onClick }) => {
+
     return (
-        <Hamburguer>
+        <Hamburguer onClick={onClick}>
             <span></span>
             <span></span>
             <span></span>
         </Hamburguer>
     )
 }
+export default hamburguer

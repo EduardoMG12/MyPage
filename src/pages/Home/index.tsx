@@ -4,8 +4,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { Link } from 'react-router-dom';
-import ICarousel from '../../components/Carousel/ItemCarousel'
-import CCarousel from '../../components/Carousel/ContainerCarousel'
+import { MapCarousel } from '../../components/Carousel/MapProjectsCarousel';
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(ScrollToPlugin);
@@ -96,13 +95,7 @@ export default function home() {
                 </BallonAbout>
             </HomeAbout>
 
-            <ProjectsContainer>
-                <h2>Alguns Projetos</h2>
-                <p>para mais <Link to="/MyProjects">projetos</Link></p>
-                <CCarousel>
-                    <ICarousel bgColor='--projects-bgd-ballons' />
-                </CCarousel>
-            </ProjectsContainer>
+            <MapCarousel.Root />
         </Container>
     )
 }

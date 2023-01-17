@@ -132,13 +132,13 @@ export const BallonAbout = styled.div`
 
 `;
 export const ProjectsContainer = styled.div`
-height: 180vh;
+    height: 180vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
+    margin: 0 auto; 
     & h2{
         color: var(--pages-color);
         font-family: var(--fontFamily-Sora);
