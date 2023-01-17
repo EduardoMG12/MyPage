@@ -1,6 +1,5 @@
-import React, { ReactNode, useEffect, useRef, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Card } from '../../Card'
-import api from '../../../services/api/api'
 import projects from '../../../services/api/api'
 import { ContainerStyle } from './style'
 import { ContainerCarousel } from '../ContainerCarousel'

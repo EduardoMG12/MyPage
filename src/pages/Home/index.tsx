@@ -1,9 +1,8 @@
 import React, { useEffect, useRef } from 'react'
-import { BallonAbout, Container, HeroSection, HomeAbout, MyImg, ProjectsContainer } from './style'
+import { BallonAbout, Container, HeroSection, HomeAbout, MyImg } from './style'
 import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
-import { Link } from 'react-router-dom';
 import { MapCarousel } from '../../components/Carousel/MapProjectsCarousel';
 
 gsap.registerPlugin(ScrollTrigger);

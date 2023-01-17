@@ -1,4 +1,3 @@
-import Header from "../src/components/Header"
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Main from "./components/Main";

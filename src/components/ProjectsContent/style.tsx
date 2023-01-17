@@ -228,6 +228,6 @@ export const ItemHover = styled.div`
                 width: 4rem;
                 
             }
-            }
+        }
     }
 `;
