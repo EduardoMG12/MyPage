@@ -9,7 +9,7 @@ export const Content = styled.div`
     gap: 3rem;
     align-items: center;
     padding-bottom: 3rem;
-    h1{
+    & h1{
         font-size: 3.5rem;
         font-family: var(--fontFamily-Sora);
         color: var(--projects-color-ballons);
@@ -36,6 +36,7 @@ export const Content = styled.div`
         }
         @media (max-width:1250px) {
             flex-direction: column;
+            height: 90rem;
         }
 
 
@@ -55,6 +56,7 @@ export const Content = styled.div`
         & .contentProject{
             display: flex;
             flex-direction: column;
+            text-align: center;
             justify-content: space-between;
             align-items: center;
             height: 90%;
@@ -65,7 +67,6 @@ export const Content = styled.div`
                 color:var(--projects-color-ballons);
             }
             & .sinopseLong{
-                width: 80rem;
                 font-size: 1.8rem;
                 color:var(--projects-color-ballons);
                 text-align: center;
@@ -79,12 +80,15 @@ export const Content = styled.div`
             & .toolsProject{
                 display: flex;
                 justify-content: center;
-                align-items: center;
+                align-items: flex-end;
                 gap: 1rem;
                 height: 3rem;
                 & li{
                     background-position: center;
-                    background-size: cover;
+                    background-size: cover; 
+                    & i{
+                        font-size: 5rem;
+                    }
                 }
             }
            
@@ -111,13 +115,43 @@ export const Content = styled.div`
                 border-radius:0 0 6rem 6rem;
                 display: flex;
                 flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
                 transition: 0.9s  all ease-in-out;
             }
         }
     }
-   
 
+    @media (max-width:768px) {
+        & h1{
+            font-size: 3rem;
+        }
+        & .project{
+            & .contentProject{
+                & .titleProject{
+                    font-size: 3rem;
+                    }
+                & .sinopseLong{
+                    font-size: 1.6rem;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    max-height: 20rem;
+                    }
+                & .titleLanguages{
+                    font-size: 2.3rem;
+                    }
+                & .toolsProject{
+                    & li{
+                        & i{
+                            font-size: 4.5rem;
 
+                        }
+                    }
+                }  
+            }
+        
+        }
+    }
 `;
 
 export const ItemHover = styled.div`
@@ -125,7 +159,11 @@ export const ItemHover = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    & a{
+     flex-direction: column;
+    }
     .githubLogo{
+        width: 5rem;
         transform: rotate(90deg);
         transition: 0.4s ease-in-out transform;
     }
@@ -156,7 +194,40 @@ export const ItemHover = styled.div`
         visibility: visible;
         pointer-events: all;
     }
+
     @media (max-width:1250px) {
-        
+        flex-direction: row;
+        align-items: center;
+        & a{
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: center;
+        }
+        & .vercelLogo2{
+            opacity:0;
+            visibility: hidden;
+            pointer-events: none;
+            transition: 1s ease-in all;
+            width: 0rem;
+        }
+        & .githubLogo{
+            transform: rotate(0deg);
+            width: 5rem;
+            
+        }
+        .vercelLogo1{
+            transform: rotate(0deg);
+            width: 10rem;
+        }
+    }
+
+    @media (max-width:425px) {
+        & a{
+            & .githubLogo{
+                transform: rotate(0deg);
+                width: 4rem;
+                
+            }
+            }
     }
 `;

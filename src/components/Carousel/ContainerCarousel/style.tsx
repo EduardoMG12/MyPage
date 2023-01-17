@@ -5,8 +5,9 @@ export const ContainerCarouselStyle = styled.section`
     align-items: center;
     margin: 0 auto;
     position: relative;
-    padding: 2.5rem;
-    height: 90vh;
+    right: 0;
+    left: 0;
+    bottom: 2rem;
     width: 100vw;
 
 `;
@@ -14,9 +15,8 @@ export const WrapperStyle = styled.div`
 `;
 export const ContainerItemsStyle = styled.div`	    
     overflow-x: auto;
-    display: flex;
     width: max-content;
-
+    padding: 2.5rem;
 `;
 
 export const Arrow = styled.div`

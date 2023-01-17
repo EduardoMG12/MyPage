@@ -7,11 +7,20 @@ export const Container = styled.div`
 `;
 export const Apresentation = styled.div`
     width: 100%;
-    height: 55vw;
+    height: 95vh;
     background: var(--img-background-projects) no-repeat;
     background-size: cover;
     background-position: 0 -25rem;
-
+    @media (max-width:768px) {
+        background-position: 0 0rem;
+        height: 90vh;
+        
+        }
+    @media (max-width:425px) {
+        background-position: -17rem 0rem;
+        height: 90vh;
+        
+        }
 `
 export const DivTittle = styled.div`
     display: flex;
@@ -25,4 +34,8 @@ export const Tittle = styled.h2`
     font-size: 10rem;
     font-weight: 700;
     color: var(--pages-color);
+     @media (max-width:425px) {
+        font-size: 7rem;
+        
+        }
 `;

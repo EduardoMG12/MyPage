@@ -33,24 +33,26 @@ export default function ProjectsContent() {
                             <Card.Description className='titleLanguages' >Principais Ferramentas</Card.Description>
 
                             <Card.List className='toolsProject'>
-                                {Object.values(projects.iconTecnologics).map((tecnologic, i) => <li key={i} ><i style={{ fontSize: "5rem", color: tecnologic.color }} className={tecnologic.className}></i></li>)}
+                                {Object.values(projects.iconTecnologics).map((tecnologic, i) => <li key={i} ><i style={{ color: tecnologic.color }} className={tecnologic.className}></i></li>)}
                             </Card.List>
                         </div>
                         <Card.ConditionalComponent className='conditionalComponent'>
 
                             {projects.codeAndDeploy.deploy.length == 0 ?
                                 <ItemHover className='itemHover' style={itemHoverStyleMapFirstCondition}>
-                                    <a href={projects.codeAndDeploy.code} target="_blank"><img className="githubLogo" style={{ width: "5rem" }} src={githubLogo} /></a>
+                                    <a href={projects.codeAndDeploy.code} target="_blank">
+                                        <img className="githubLogo" src={githubLogo} />
+                                    </a>
                                 </ItemHover>
                                 :
                                 <>
                                     <ItemHover className='itemHover' style={itemHoverStyleMapLastCondition}>
                                         <a href={projects.codeAndDeploy.code} target="_blank" style={{}}>
-                                            <img className="githubLogo" style={{ width: "5rem" }} src={githubLogo} />
+                                            <img className="githubLogo" src={githubLogo} />
                                         </a>
                                     </ItemHover>
                                     <ItemHover style={{ height: "50%", borderRadius: "0 0 6rem 0", }}>
-                                        <a href={projects.codeAndDeploy.deploy} target="_blank" style={{ display: "flex", flexDirection: "column" }}>
+                                        <a href={projects.codeAndDeploy.deploy} target="_blank" style={{ display: "flex", }}>
                                             <img className="vercelLogo1" src={vercelLogoText} alt="" />
                                             <img className="vercelLogo2" src={vercelLogo} alt="" />
                                         </a>
