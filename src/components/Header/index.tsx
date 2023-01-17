@@ -26,7 +26,7 @@ export default function () {
                         <List style={{ display: ` ${hamburguerBool == false ? "" : "flex"}` }}>
                             <li><Items to="/"><p>Home</p></Items></li>
                             <li><Items to="/"><p>Conhecimentos/Ferramentos</p></Items></li>
-                            <li><Items to="MyProjects"><p>Projetos</p></Items></li>
+                            <li><Items to="Projetos"><p>Projetos</p></Items></li>
                             <ButtonTheme />
                         </List>
                         <Hamburguer onClick={() => setHamburguerBool(!hamburguerBool)} />
