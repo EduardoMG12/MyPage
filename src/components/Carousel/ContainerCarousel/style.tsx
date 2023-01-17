@@ -35,5 +35,4 @@ export const Arrow = styled.div`
      &:hover{
         opacity: 1;
     }
-
 `;
