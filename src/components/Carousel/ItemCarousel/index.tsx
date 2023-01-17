@@ -1,6 +1,6 @@
 import React from 'react'
 import { CardItemCarousel, Image } from './style'
-import api, { IProjects, ProjectsType } from '../../../services/api/api'
+import api, { IProjects } from '../../../services/api/api'
 
 type TICarousel = {
     bgColor?: string,
@@ -16,7 +16,7 @@ const ICarousel: React.FC<TICarousel> = ({ bgColor, widthHeight }) => {
                     backgroundImage: `url(${projects.image.length > 1 ? projects.image : 'https //source.unsplash.com/random/300x300px?developer'})`
                 }} />
                 <div className="content">
-                    <h2 className='tittleContent'>{projects.tittle}</h2>
+                    <h2 className='tittleContent'>{projects.title}</h2>
                     <p className='tittleTools'>Principais Ferramentas</p>
                     <ul className='toolsProjects'>
 
