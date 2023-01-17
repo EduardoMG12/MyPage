@@ -8,7 +8,7 @@ const Root: React.FC = () => {
     const carouselMap: any[] = Object.entries(projects).map(([tittle, projects]) => {
         return projects.map((projects) => {
             return <>
-                <Card.Link LinkHref={projects.codeAndDeploy.code} key={projects.id}>
+                <Card.Link LinkHref={projects.id} key={projects.id}>
                     <Card.Root>
                         <Card.Image imgHref={projects.image} imgAlt={projects.image} />
                         <div>
