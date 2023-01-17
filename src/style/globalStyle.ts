@@ -16,6 +16,7 @@ const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 
+
 //Colors black theme;
   :root{
     --header-background: rgba(0, 0, 0, 0.7);
@@ -78,7 +79,6 @@ const GlobalStyle = createGlobalStyle`
   ::-webkit-scrollbar-corner {
     background: transparent;
   }
-
   }
   
 //Colors white theme;
@@ -108,7 +108,6 @@ const GlobalStyle = createGlobalStyle`
 
     //Projects
     --img-background-projects: url(${projectsWhite});
-
   }
   :root{
 //Fonts
@@ -138,6 +137,6 @@ const GlobalStyle = createGlobalStyle`
   font-size: 62.5%
   }
   
-`
+`;
 
 export default GlobalStyle;

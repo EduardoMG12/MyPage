@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from 'react'
-import { BallonAbout, Container, HeroSection, HomeAbout, MyImg, ProjectsContainer } from './style'
+import { BallonAbout, Container, HeroSection, HomeAbout, MyImg } from './style'
 import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
-import Carousel from '../../components/Carousel'
+import { MapCarousel } from '../../components/Carousel/MapProjectsCarousel';
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(ScrollToPlugin);
@@ -94,14 +94,7 @@ export default function home() {
                 </BallonAbout>
             </HomeAbout>
 
-            <ProjectsContainer>
-                <div className="tittle">
-                    <h2>Alguns Projetos</h2>
-                    <p>para mais <a href="/MyProjects">projetos</a></p>
-                </div>
-                <Carousel />
-            </ProjectsContainer>
-
+            <MapCarousel.Root />
         </Container>
     )
 }

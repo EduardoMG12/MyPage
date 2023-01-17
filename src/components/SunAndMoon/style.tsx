@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-styled
-
 export const ButtonTheme = styled.div`
     position: absolute;
     top: 50%;
