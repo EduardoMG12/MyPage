@@ -22,7 +22,7 @@ e desenvolver minhas habilidades como desenvolvedor.
 
 ## Contato
 Se você tiver alguma dúvida ou deseja entrar em contato, por
-favor, envie um email para char.eduardo.mello.guimaraes@hotmail.com ou visite meu perfil no LinkedIn
+favor, envie um email para charles.eduardo.mello.guimaraes@hotmail.com ou visite meu perfil no LinkedIn
 
 ## Licença
 Este projeto está licenciado sob a licença MIT
