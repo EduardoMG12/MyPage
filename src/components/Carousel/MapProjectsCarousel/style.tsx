@@ -5,7 +5,7 @@ import { ContainerItemsStyle } from "../ContainerCarousel/style";
 export const ContainerStyle = styled(ContainerItemsStyle)`
     
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-flow: nowrap;
     width: 100vw;
