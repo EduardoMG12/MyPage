@@ -1,7 +1,10 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import projetos, { IProjects } from '../../services/api/api';
-import { Container, ImageBgd, TextContent } from './style';
+import { Container, ExternalLink, ImageBgd, TextContent } from './style';
+import githubLogo from '/githubLogo.svg';
+import vercelLogo from '/vercelLogo.svg';
+import vercelLogoText from '/vercelLogoText.svg'
 
 function Project() {
     const { id } = useParams();
@@ -34,10 +37,31 @@ function Project() {
                 <h2>{project.title}</h2>
 
                 <div>
-                    <p>{project.descriptionLong}</p>
+                    <p>{project.descriptionInteger}</p>
                 </div>
 
             </TextContent>
+
+            {project.codeAndDeploy.deploy.length == 0 ?
+                <ExternalLink>
+                    <a href={project.codeAndDeploy.code} target="_blank">
+                        <img className="githubLogo" src={githubLogo} width="10rem" />
+                    </a>
+                </ExternalLink>
+                :
+                <div style={{ display: "flex", alignItems: "center", justifyContent: "space-around", maxWidth: "100vw", width: "40%", flexWrap: "wrap" }}>
+                    <ExternalLink>
+                        <a href={project.codeAndDeploy.code} target="_blank" style={{}}>
+                            <img className="githubLogo" src={githubLogo} width="100rem" />
+                        </a>
+                    </ExternalLink>
+                    <ExternalLink style={{ height: "50%", borderRadius: "0 0 6rem 0", }}>
+                        <a href={project.codeAndDeploy.deploy} target="_blank" style={{ display: "flex", }}>
+                            <img className="vercelLogo1" src={vercelLogoText} alt="" width="150rem" />
+
+                        </a>
+                    </ExternalLink>
+                </div>}
 
         </Container>
     )

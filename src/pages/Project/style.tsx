@@ -13,6 +13,7 @@ export const Container = styled.section`
         display: flex;
         justify-content: center;
         align-items: flex-end;
+        flex-wrap: wrap;
         gap: 5rem;
             & li{
                 font-size: 10rem;
@@ -38,8 +39,15 @@ export const TextContent = styled.div`
     }
     & p{
         font-size: 3rem;
-    
-    
-    
+        margin-bottom: 5rem;
+        padding-inline: 2rem;
     }
+`;
+
+export const ExternalLink = styled.div`
+    margin-bottom: 5rem;
+    &:hover{
+        transform: scale(1.05);
+    }
+    transition: 0.4s ease-in-out all;
 `;
