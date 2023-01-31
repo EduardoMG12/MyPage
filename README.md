@@ -1,5 +1,4 @@
 # Portfólio Pessoal
-
 Este projeto é uma página de minha autoria para apresentar quem sou eu, meus códigos e projetos. Tentei usar o mínimo de bibliotecas possíveis, utilizando React, TypeScript, Styled Components e GSAP. A página possui 4 rotas:
 
 - **Home**: Nesta rota, há uma breve apresentação sobre mim e um efeito parallax com uma seleção de alguns de meus projetos.
@@ -13,6 +12,9 @@ para melhorar a qualidade do código e facilitar a manutenção do projeto.
 Além de servir como uma ferramenta para apresentar meus projetos e habilidades, este
 projeto também foi utilizado como meio de adquirir novos conhecimentos
 e desenvolver minhas habilidades como desenvolvedor.
+
+## rotótipo do projeto
+- https://www.figma.com/file/CXbtalkYf6FOKsSd7TJkeQ/Eduardo-Mello-Page?node-id=62%3A716&t=InEg9mgkldnoAqvx-1
 
 ## Instalação e execução
 - Faça o clone do repositório para o seu computador.
