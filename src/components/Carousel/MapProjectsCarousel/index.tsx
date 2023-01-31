@@ -8,7 +8,7 @@ const Root: React.FC = () => {
     const carouselMap: any[] = Object.entries(projects).map(([tittle, projects]) => {
         return projects.map((projects) => {
             return <>
-                <Card.Link LinkHref={projects.codeAndDeploy.code} key={projects.id}>
+                <Card.Link LinkHref={projects.id} key={projects.id}>
                     <Card.Root>
                         <Card.Image imgHref={projects.image} imgAlt={projects.image} />
                         <div>
@@ -45,13 +45,9 @@ const Root: React.FC = () => {
     return (
         <ContainerCarousel.Root>
             <ContainerCarousel.ArrowLeft onClick={() => setCurrentItem(currentItem > 0 ? currentItem - 1 : maxItems)} className="fa-solid fa-chevron-left" color='var(--pages-color)' />
-            <ContainerCarousel.Wrapper>
-                <ContainerCarousel.ContainerItems>
-                    <ContainerStyle>
-                        {carouselMap}
-                    </ContainerStyle>
-                </ContainerCarousel.ContainerItems>
-            </ContainerCarousel.Wrapper>
+            <ContainerStyle>
+                {carouselMap}
+            </ContainerStyle>
             <ContainerCarousel.ArrowRight onClick={() => setCurrentItem(currentItem)} className="fa-solid fa-chevron-right" color='var(--pages-color)' />
         </ContainerCarousel.Root>
     )

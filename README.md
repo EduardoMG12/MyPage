@@ -13,7 +13,7 @@ Além de servir como uma ferramenta para apresentar meus projetos e habilidades,
 projeto também foi utilizado como meio de adquirir novos conhecimentos
 e desenvolver minhas habilidades como desenvolvedor.
 
-## rotótipo do projeto
+## Protótipo do projeto
 - https://www.figma.com/file/CXbtalkYf6FOKsSd7TJkeQ/Eduardo-Mello-Page?node-id=62%3A716&t=InEg9mgkldnoAqvx-1
 
 ## Instalação e execução

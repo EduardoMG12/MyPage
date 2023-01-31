@@ -6,9 +6,6 @@ import { useState } from 'react'
 
 export default function () {
     const [hamburguerBool, setHamburguerBool] = useState<boolean>(false)
-
-
-    console.log(hamburguerBool)
     return (
         <>
             <Header style={{ height: `${hamburguerBool == true ? "20rem" : "7.5rem"}` }}>

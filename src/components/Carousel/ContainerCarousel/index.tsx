@@ -1,6 +1,6 @@
 import React, { Children, useEffect, useState } from 'react';
 import { Card } from '../../Card';
-import { Arrow, ContainerCarouselStyle, ContainerItemsStyle, WrapperStyle } from './style';
+import { Arrow, ContainerCarouselStyle, ContainerItemsStyle } from './style';
 
 interface IContainerCarousel {
     children: React.ReactNode,
@@ -14,17 +14,8 @@ const Root: React.FC<IContainerCarousel> = ({ children }) => {
     )
 };
 
-const Wrapper: React.FC<IContainerCarousel> = ({ children }) => {
-    return (
-        <WrapperStyle>
-            {children}
-        </WrapperStyle>
-    )
-
-};
-
 interface IContainerItems {
-    children: React.ReactElement<typeof Card>
+    children: React.ReactElement[]
 
 };
 
@@ -63,7 +54,6 @@ const ArrowRight: React.FC<IArrow> = ({ className, color }) => {
 
 export const ContainerCarousel = {
     Root,
-    Wrapper,
     ContainerItems,
     ArrowLeft,
     ArrowRight

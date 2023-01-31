@@ -7,10 +7,11 @@ export const Container = styled.div`
    align-items: center;
    justify-content: center;
    background-color: var(--pages-background);
-   overflow-y: hidden;
+   overflow-x: hidden;
+   max-width: 100vw;
 `;
 export const HeroSection = styled.section`
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background: var(--img-background) center no-repeat;
     background-size: cover;   
@@ -71,6 +72,7 @@ export const MyImg = styled.div`
     height:70rem;
     width: 70rem;
     opacity: 1;
+    
     @media (max-width:1600px) {
         height:60rem;
         width: 60rem;
@@ -133,7 +135,6 @@ export const BallonAbout = styled.div`
 `;
 export const ProjectsContainer = styled.div`
     height: 180vh;
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
