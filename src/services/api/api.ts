@@ -77,8 +77,8 @@ const projects: ProjectsType =
         "id": "2",
         "title": "PokeDex",
         "image": "https://docs.google.com/uc?id=1JOVfsdbyfyie0dGhIhiv7Ncdu4JvLWHd",
-        "descriptionShort": "Pokedex feita com consumo de api usando axios, e usando components da library ui-material",
-        "descriptionLong": "Pokedex feita com consumo de api usando axios, e usando components da library ui-material",
+        "descriptionShort": "Pokedex feita consumindo api.",
+        "descriptionLong": "Uma Pokedex feita com consumo de api usando axios para fazer as requisições para pokeapi fiz a mesma usando components da bibilhoteca Material-UI a mesma é totalmente responsiva e muito bem estrutura",
         "iconTecnologics": [
             {
                 "accessibility": "TypeScript icon",
@@ -90,10 +90,15 @@ const projects: ProjectsType =
                 "className": "fa-brands fa-react",
                 "color": "#2C9FD8"
             },
+            {
+                "accessibility": "Materialui",
+                "className": "devicon-materialui-plain",
+                "color": "#2C9FD8"
+            },
         ],
         "codeAndDeploy": {
             "code": "https://github.com/EduardoMG12/Pokedex",
-            "deploy": ""
+            "deploy": "https://pokedex-ngst37m8t-eduardomg12.vercel.app"
         }
     },
     {
