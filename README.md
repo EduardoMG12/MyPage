@@ -23,8 +23,9 @@ e desenvolver minhas habilidades como desenvolvedor.
 - Abra o seu navegador e acesse http://localhost:3000 para visualizar o projeto.
 
 ## Contato
-Se você tiver alguma dúvida ou deseja entrar em contato, por
-favor, envie um email para charles.eduardo.mello.guimaraes@hotmail.com ou visite meu perfil no LinkedIn
+Se você tiver alguma dúvida ou deseja entrar em contato, por favor, envie um email </br>
+[:envelope_with_arrow:](charles.eduardo.mello.guimaraes@hotmail.com) /
+[<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="30rem" align="center" />](https://www.linkedin.com/in/eduardomg12/)
 
 ## Licença
 Este projeto está licenciado sob a licença MIT
