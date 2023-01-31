@@ -74,11 +74,35 @@ const projects: ProjectsType =
         }
     },
     {
+        "id": "2",
+        "title": "PokeDex",
+        "image": "https://docs.google.com/uc?id=1JOVfsdbyfyie0dGhIhiv7Ncdu4JvLWHd",
+        "descriptionShort": "Pokedex feita com consumo de api usando axios, e usando components da library ui-material",
+        "descriptionLong": "Pokedex feita com consumo de api usando axios, e usando components da library ui-material",
+        "iconTecnologics": [
+            {
+                "accessibility": "TypeScript icon",
+                "className": "devicon-typescript-plain",
+                "color": "#2C9FD8"
+            },
+            {
+                "accessibility": "React icon",
+                "className": "fa-brands fa-react",
+                "color": "#2C9FD8"
+            },
+        ],
+        "codeAndDeploy": {
+            "code": "https://github.com/EduardoMG12/Pokedex",
+            "deploy": ""
+        }
+    },
+    {
         "id": "a78d78128",
         "title": "Landing Page",
         "image": "https://docs.google.com/uc?id=1HmGJzFwioWkvRb9BMG_D51GD5kSGz4Tq",
         "descriptionShort": "landing page com uma breve historia sobre eu e aprensetaçao",
         "descriptionLong": "Um projeto que fiz com o objetivo de treinar/testar meus conhecimentos de html css e js, um projeto simples porem funcional, que tem como premissa ser uma página contando um pouco da minha hístoria e me apresentando, mostrando minhas midias profissionais.",
+        "descriptionInteger": "as vezes falão que menos é mais, esta landing page tem como objetivo fazer uma breve apresentação de quem sou com um layout simple e objetivo, a época que eu a fiz foi com objetivo de testar meus conhecimentos de javascript html e css, a mesma é totalmente responsiva.",
         "iconTecnologics": [
             {
                 "accessibility": "JavaScript",
@@ -109,6 +133,7 @@ const projects: ProjectsType =
         "image": "https://docs.google.com/uc?id=1NMotoboMaqvqDAy2bTlg1EdF5ZVq_nKy",
         "descriptionShort": "Página que puxa o github de usúarios pela a api ",
         "descriptionLong": "Uma página completamente responsiva com um input para puxar nick-names de usuários do github, este projeto foi feito vizando a organização e a separação de arquivos interface telas entre outras coisas para o código ficar mais limpo. ",
+        "descriptionInteger": "Um projeto feito apartir do curso dev-quest, o mesmo tem como o objetivo fazer o consumo de uma api, fiz umas customizações para deixa-lo mais atrativo, no mesmo uso axios para fazer as requisições e ele é totalmente responsivo.",
         "iconTecnologics": [
             {
                 "accessibility": "JavaScript",
@@ -139,6 +164,7 @@ const projects: ProjectsType =
         "image": "https://docs.google.com/uc?id=1B2XkhxV8YLOUek_BzHv-cPiR84r_zmLT",
         "descriptionShort": "Cronômetro funcional",
         "descriptionLong": "Um projeto simples porem funcional de um timer com três botões, reset para zerar o timer, pause para parar e init para começar a contar ou continuar, o projeto sendo funcional e responsivo.",
+        "descriptionInteger": "Um projeto simples porem funcional de um timer com três botões, reset para zerar o timer, pause para parar e init para começar a contar ou continuar, o projeto sendo funcional e responsivo.",
         "iconTecnologics": [
             {
                 "accessibility": "JavaScript",
@@ -169,6 +195,7 @@ const projects: ProjectsType =
         "image": "https://docs.google.com/uc?id=1i40foVeV2xbF7CuVXqwmSUZ2ltoDLtZY",
         "descriptionShort": "Uma lista de a fazeres que guarda dados em LocalStorage",
         "descriptionLong": "O projeto ajuda a organizar as ideias o objetivo é ser uma lista de a fazeres aonde você mesmo consegue colocar e deletar itens, a mesma tem a função de deletar os a fazeres apertando no botão e de adicionar apertando no botão ou apertando enter. A página é completamente responsivel.",
+        "descriptionInteger": "Este é o projeto resultante da participação em um hackathon realizado pela empresa FCamara. Durante 15 dias, nosso grupo de 5 pessoas contanto eu desenvolvemos um projeto completo utilizando Figma e tecnologias como React. A equipe se manteve organizada e atualizada por meio de dailys e o uso de ferramentas como o Kambam. O projeto foi dividido em duas partes, sendo o front-end desenvolvido em um repositório separado do back-end. A participação no projeto foi uma grande oportunidade de aprendizado para mim, pois ainda não possuiá familiaridade com React e trabalho em equipe. O desafio de aprender e aplicar uma nova tecnologia em um curto período de tempo ampliou minhas perspectiva e habilidades.",
         "iconTecnologics": [
             {
                 "accessibility": "JavaScript",
@@ -196,7 +223,8 @@ const projects: ProjectsType =
         "title": "Calculadora",
         "image": "https://docs.google.com/uc?id=1kfBW42SX_vlPYP4BYmUDjEexi3ZIoJ6l",
         "descriptionShort": "Calculadora feita em js com factory function",
-        "descriptionLong": "Um exercicio de um curso que fiz, que é um projeto feito em facroty function, fiz quando estava pegando a base do js o mesmo foi feito primeiramente em constructor function e depois refatorado para factory function, fiz uns updates da calculadora que não estava no projeto final, que foi a responsividade, o led em cima da calculadora o som que a calculadora faz e o aviso de erro.",
+        "descriptionLong": "Um exercicio de um curso que fiz, que é um projeto feito em factory function, fiz quando estava pegando a base do js o mesmo foi feito primeiramente em constructor function e depois refatorado para factory function, fiz uns updates da calculadora que não estava no projeto final, que foi a responsividade, o led em cima da calculadora o som que a calculadora faz e o aviso de erro.",
+        "descriptionInteger": "Exercicio do curso do luiz otávio, fiz o mesmo utilizando factory function, fiz quando estava pegando a base do js o mesmo foi feito primeiramente em constructor function e depois refatorado para factory function, fiz uns updates da calculadora que não estava no projeto final para deixalo mais completo eatraente, que foi a responsividade, o led em cima da calculadora o som que a calculadora faz e o aviso de erro.",
         "iconTecnologics": [
             {
                 "accessibility": "JavaScript",
