@@ -154,9 +154,9 @@ export const Items = styled(Link)`
     }
     &:hover,p:hover,ul:hover{
         transition: 0.3s transform ease-in-out;
-        transition: 0.9s  letter-spacing ease-in-out;
-        transform: translateY(-0.5rem);
-        letter-spacing: 0.25rem;
+        transition: 0.4s  letter-spacing ease-in-out;
+        transform: scale(1.08);
+        letter-spacing: 0.35rem;
     }
     @media (max-width: 425px) {
         & p{
