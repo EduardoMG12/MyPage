@@ -59,6 +59,8 @@ export const Content = styled.div`
             text-align: center;
             justify-content: space-between;
             align-items: center;
+            width: 90%;
+            max-width: 100%;
             height: 90%;
             font-weight: 400;
             & .titleProject{
