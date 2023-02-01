@@ -4,11 +4,12 @@ import { Arrow, ContainerCarouselStyle, ContainerItemsStyle } from './style';
 
 interface IContainerCarousel {
     children: React.ReactNode,
+    style?: React.CSSProperties,
 }
 
-const Root: React.FC<IContainerCarousel> = ({ children }) => {
+const Root: React.FC<IContainerCarousel> = ({ children, style }) => {
     return (
-        <ContainerCarouselStyle>
+        <ContainerCarouselStyle style={style}>
             {children}
         </ContainerCarouselStyle>
     )
@@ -45,7 +46,7 @@ const ArrowLeft: React.FC<IArrow> = ({ className, color }) => {
 
 const ArrowRight: React.FC<IArrow> = ({ className, color }) => {
     return (
-        <Arrow style={{ right: "0", background: `linear-gradient(to right, transparent 0%, black 200%)` }}>
+        <Arrow style={{ right: "0px", background: `linear-gradient(to right, transparent 0%, black 200%)` }}>
             <i className={className} style={{ color: `${color ?? "white"}` }}></i>
         </Arrow>
     )

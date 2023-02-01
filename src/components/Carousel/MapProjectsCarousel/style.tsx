@@ -12,6 +12,10 @@ export const ContainerStyle = styled(ContainerItemsStyle)`
     overflow-x: auto;
     font-size: 2.5rem;
     gap: 4rem;
+    scroll-behavior: smooth;
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
     & a{
         display: flex;
         flex-direction: column;
@@ -48,4 +52,36 @@ export const ContainerStyle = styled(ContainerItemsStyle)`
         }
     }
 
+    @media (max-width:900px) {
+        & a{
+
+            & img{
+                height: 30rem;
+                width: 55rem;
+            }
+            & div{
+                height: 50rem;
+                width: 55rem;
+                padding-inline: 2rem;
+                justify-content: space-around;
+                font-size: 2rem;
+            }
+        }
+    }
+    @media (max-width:500px) {
+        & a{
+
+            & img{
+                height: 30rem;
+                width: 35rem;
+            }
+            & div{
+                height: 50rem;
+                width: 35rem;
+                padding-inline: 2rem;
+                justify-content: space-around;
+                font-size: 2rem;
+            }
+        }
+    }
 `;

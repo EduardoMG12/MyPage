@@ -19,7 +19,7 @@ const Root: React.FC = () => {
                                     {projects.iconTecnologics.map((item, index) => {
                                         return (
                                             <Card.ItemList key={index}>
-                                                <i className={item.className} color={item.color}></i>
+                                                <i className={item.className} style={{ color: `${item.color}` }} ></i>
                                             </Card.ItemList>
                                         );
                                     })}
@@ -43,7 +43,7 @@ const Root: React.FC = () => {
 
 
     return (
-        <ContainerCarousel.Root>
+        <ContainerCarousel.Root style={{ marginBottom: "20rem" }}>
             <ContainerCarousel.ArrowLeft onClick={() => setCurrentItem(currentItem > 0 ? currentItem - 1 : maxItems)} className="fa-solid fa-chevron-left" color='var(--pages-color)' />
             <ContainerStyle>
                 {carouselMap}

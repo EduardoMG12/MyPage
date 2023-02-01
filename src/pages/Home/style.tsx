@@ -69,34 +69,25 @@ export const MyImg = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height:70rem;
-    width: 70rem;
+    height: 100%;
+    max-height:70rem;
+    width: 100%;
+    max-width: 70rem;
     opacity: 1;
     
-    @media (max-width:1600px) {
-        height:60rem;
-        width: 60rem;
-    }
-    @media (max-width:1300px) {
-        height:55rem;
-        width: 55rem;
-    }
-    @media (max-width:1060px) {
-        height:75rem;
-        width: 75rem;
-    }
     @media (max-width:868px) {
         height:60rem;
         width: 60rem;
     }
     @media (max-width:600px) {
-        height:35rem;
+        height: 35rem;
         width: 35rem;
     }
 `;
 
 export const BallonAbout = styled.div`
-    width: 60rem;
+    width: 40%;
+    max-width: 100vw;
     max-height: 60rem;
     padding: 0 6rem;
     background: var(--ballon-message);
@@ -104,31 +95,36 @@ export const BallonAbout = styled.div`
     backdrop-filter: blur( 10px );
     -webkit-backdrop-filter: blur( 10px );
     border-radius: 39px;
-    font-family: var(--fontFamily-PtSans);
-    font-weight: 400;
-    font-size: 2.5rem;
-    letter-spacing: 3px;
-    line-height: 35px;
+    & p{
+        font-family: var(--fontFamily-PtSans);
+        font-weight: 400;
+        font-size: 2.5rem;
+        letter-spacing: 0.3rem;
+        line-height: 3.5rem;
+    }
     opacity: 1;
     color: var(--pages-color);
-    p{
-    }
     @media (max-width:1060px) {
-        width: 60rem;
-        font-size: 1rem;
-        line-height: 30px;
+        width:60%;
+        & p{
+            font-size: 2rem;
+            text-align: center;
+            line-height: 3rem;
+        }
+        margin-block: 5rem;
         padding: 6rem 3rem;
     }
     @media (max-width:600px) {
-        width: 40rem;
-        font-size: 1rem;
-        line-height: 30px;
-        padding: 6rem 3rem;
+        width: 95%;
+        & p{
+            font-size: 2rem;
+        }
     }
     @media (max-width:400px) {
-        width: 30rem;
-        font-size: 0.8rem;
-        line-height: 25px;
+        & p{
+            font-size: 1.5rem;
+            line-height: 2.5rem;
+        }
         padding: 4rem 3rem;
     }
 
